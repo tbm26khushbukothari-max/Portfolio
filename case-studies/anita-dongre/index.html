@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anita Dongre — Khushbu Kothari</title>
+<meta name="description" content="Building a sustainability messaging framework for one of India's leading luxury fashion brands. By Khushbu Kothari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#faf7f0;--bg-alt:#f1ece1;--ink:#15110d;--ink-2:#2d2620;--muted:#6b6258;--faint:#a89e90;--line:#e3dccc;--accent:#c4522d;--serif:'Fraunces',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;--r-md:8px;--r-lg:16px;--page-pad:2.5rem; }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}
+  .wrap{width:100%;max-width:800px;margin:0 auto;padding:0 var(--page-pad)}
+  .back-nav{padding:1.5rem var(--page-pad);max-width:800px;margin:0 auto;display:flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);transition:color .2s}.back-nav:hover{color:var(--accent)}
+  .cs-hero{padding:4rem 0 3rem;border-bottom:1px solid var(--line);margin-bottom:4rem}
+  .cs-meta{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.5rem}
+  .pill{font-family:var(--mono);font-size:.62rem;padding:.28rem .6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:var(--bg-alt);border-radius:999px}.pill.accent{background:var(--accent);color:#fff}
+  .cs-title{font-family:var(--serif);font-size:clamp(2rem,5vw,3.5rem);font-variation-settings:'opsz' 144;line-height:1.05;letter-spacing:-.03em;margin-bottom:1.25rem}
+  .cs-lede{font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.35rem);color:var(--muted);font-variation-settings:'opsz' 24;line-height:1.55;max-width:52ch}
+  .cs-hero-img{margin:3rem 0;aspect-ratio:16/9;background:var(--bg-alt);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line)}
+  .cs-hero-img img{width:100%;height:100%;object-fit:contain;display:block}
+  .cs-metrics{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.5rem 0;margin-bottom:4rem}
+  .cs-metric .v{font-family:var(--serif);font-size:2rem;color:var(--accent);font-variation-settings:'opsz' 48;line-height:1}
+  .cs-metric .k{font-size:.78rem;color:var(--muted);margin-top:.35rem}
+  .cs-metric+.cs-metric{padding-left:1.5rem;border-left:1px solid var(--line)}
+  .cs-body{max-width:65ch}.cs-section{margin-bottom:3.5rem}
+  .cs-section-label{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}.cs-section-label::before{content:'';width:1.25rem;height:1px;background:var(--accent)}
+  .cs-section h2{font-family:var(--serif);font-size:clamp(1.4rem,2.5vw,1.9rem);font-variation-settings:'opsz' 72;margin-bottom:1rem;line-height:1.15}
+  .cs-section p{font-size:1rem;color:var(--ink-2);line-height:1.75;margin-bottom:1rem}.cs-section p:last-child{margin-bottom:0}.cs-section strong{color:var(--ink);font-weight:500}
+  .cs-quote{border-left:2px solid var(--accent);padding:.75rem 0 .75rem 1.5rem;margin:2.5rem 0}
+  .cs-quote p{font-family:var(--serif);font-size:1.2rem;font-variation-settings:'opsz' 36;color:var(--ink);font-style:italic;line-height:1.5;margin:0}
+  .cs-quote cite{display:block;font-family:var(--mono);font-size:.65rem;font-style:normal;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:.6rem}
+  .cs-footer{padding:3rem 0;border-top:1px solid var(--line);margin-top:5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+  .cs-footer a{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);transition:color .2s;display:inline-flex;align-items:center;gap:.4rem}.cs-footer a:hover{color:var(--accent)}
+  @media(max-width:640px){:root{--page-pad:1.25rem}.cs-metrics{grid-template-columns:1fr}.cs-metric+.cs-metric{padding-left:0;padding-top:1rem;border-left:none;border-top:1px solid var(--line)}}
+</style>
+</head>
+<body>
+<a href="../../index.html" class="back-nav">← Back to portfolio</a>
+<main><div class="wrap">
+  <div class="cs-hero">
+    <div class="cs-meta">
+      <span class="pill accent">Luxury Positioning</span>
+      <span class="pill">Brand Strategy · Sustainability</span>
+      <span class="pill">Anita Dongre</span>
+      <span class="pill">2024</span>
+    </div>
+    <h1 class="cs-title">Making sustainability the new language of Indian luxury fashion.</h1>
+    <p class="cs-lede">Anita Dongre had a genuine sustainability story. The challenge was translating it into language that luxury consumers would find aspirational — not responsible.</p>
+  </div>
+  <div class="cs-hero-img">
+    <img src="../../assets/images/projects/anita-dongre/anita-dongre.jpeg" alt="Anita Dongre sustainability campaign">
+  </div>
+  <div class="cs-metrics">
+    <div class="cs-metric"><div class="v">3</div><div class="k">channels — digital, retail, editorial</div></div>
+    <div class="cs-metric"><div class="v">1</div><div class="k">unified messaging framework</div></div>
+    <div class="cs-metric"><div class="v">Luxury</div><div class="k">sustainability — a new category frame</div></div>
+  </div>
+  <div class="cs-body">
+    <div class="cs-section">
+      <div class="cs-section-label">Context</div>
+      <h2>One of India's most recognised luxury fashion houses with a sustainability practice ahead of its time.</h2>
+      <p>Anita Dongre is a Rs 600 Cr+ fashion label operating across luxury, premium, and occasion-wear segments. The brand has deep roots in artisan craft, natural dyes, and ethical production — practices embedded long before sustainability became a fashion industry talking point.</p>
+      <p>The brief was to build a <strong>messaging framework</strong> that would make the sustainability narrative land as a luxury signal, not a charitable one — applied consistently across digital, retail, and editorial channels.</p>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">Problem</div>
+      <h2>Sustainability in fashion has a tone problem.</h2>
+      <p>Most sustainability messaging in fashion reads like an apology: carbon offsets, certifications, supply chain disclaimers. It is the language of responsibility, not desire. Luxury consumers do not make purchase decisions on responsibility. They make them on beauty, provenance, and identity.</p>
+      <p>Anita Dongre's sustainability practices — the artisan communities, the natural dyes, the slow production cycles — were genuinely beautiful stories. They were being communicated in the wrong register, to the wrong instinct in the consumer.</p>
+    </div>
+    <blockquote class="cs-quote">
+      <p>"Slow fashion is not a compromise. It is the original luxury. Anita Dongre has always made it this way."</p>
+      <cite>The brand line that anchored the messaging framework</cite>
+    </blockquote>
+    <div class="cs-section">
+      <div class="cs-section-label">Approach</div>
+      <h2>Reframe sustainability as provenance. Lead with craft, not conscience.</h2>
+      <p>The messaging framework repositioned sustainability as the proof of luxury, not a trade-off against it. The pillars were: <strong>Craft</strong> (the artisan skill behind each piece), <strong>Provenance</strong> (the specific Indian traditions each collection draws from), and <strong>Permanence</strong> (pieces made to be worn for decades, not seasons).</p>
+      <p>Each pillar had a specific language register and visual treatment adapted for the three channels. Digital — particularly Instagram — led with visual craft stories. Retail deployed provenance through in-store storytelling cards and trained SA conversations. Editorial positioned the brand as a luxury authority on conscious craft, not a sustainable fashion brand.</p>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">Impact</div>
+      <h2>A unified voice across three channels. Sustainability as a luxury signal.</h2>
+      <p>The framework gave the brand team a consistent decision-making tool: for any piece of communication, the question was not "how do we talk about sustainability?" but "which pillar does this moment belong to, and what is the luxury register for that pillar?"</p>
+      <p>The editorial positioning — Anita Dongre as a slow-fashion authority rather than a sustainable fashion brand — created a distinct category frame that other luxury Indian labels were not occupying. That whitespace was the strategic asset.</p>
+    </div>
+    <div class="cs-section">
+      <div class="cs-section-label">Learnings</div>
+      <h2>The audience's aspiration, not their conscience, is the lever.</h2>
+      <p>Sustainability messaging that leads with impact metrics (tonnes of dye saved, artisans employed) speaks to a consumer's sense of responsibility. Messaging that leads with beauty, rarity, and craft speaks to their aspiration. <strong>Luxury consumers respond to aspiration.</strong> The data on the craft is the proof point you deploy after you have their attention — not the reason you give them to pay attention.</p>
+    </div>
+  </div>
+</div></main>
+<footer><div class="wrap"><div class="cs-footer">
+  <a href="../../index.html">← All work</a>
+  <a href="../bearcare/">Next: Bearcare →</a>
+</div></div></footer>
+</body>
+</html>
