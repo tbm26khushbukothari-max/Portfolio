@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:\\\\Users\\\\Khushbu Kothari\\\\OneDrive\\\\Documents\\\\KK Portfolio\\\\\")",
+      "WebFetch(domain:www.tonicworldwide.com)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebSearch",
+      "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\Users\\\\Khushbu Kothari\\\\OneDrive\\\\Documents\\\\KK Portfolio\\\\case-studies\\\\loreal-cannes\" -Force)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Khushbu Kothari\\\\OneDrive\\\\Documents\\\\KK Portfolio\\\\case-studies\\\\\" -Recurse | Where-Object { -not $_.PSIsContainer -and $_.Name -ne \"index.html\" } | Select-Object FullName, Length | Format-Table -AutoSize)",
+      "PowerShell([System.IO.Directory]::GetFiles\\(\"C:\\\\Users\\\\Khushbu Kothari\\\\OneDrive\\\\Documents\\\\KK Portfolio\\\\case-studies\\\\live-history-india\"\\))",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
+    ]
+  }
+}
