@@ -4,16 +4,162 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ROOS India — Khushbu Kothari</title>
-<meta name="description" content="Founding a sustainable upcycled fashion label from scratch. Rs 5L+ revenue, 1,000+ women, zero CAC on Etsy. By Khushbu Kothari.">
+<meta name="description" content="Founding a sustainable upcycled fashion label: Rs 5L+ revenue, 1,000+ women, zero CAC on Etsy. By Khushbu Kothari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f0; --bg-alt: #f1ece1; --bg-dark: #15110d;
+    --ink: #15110d; --ink-2: #2d2620; --muted: #6b6258; --faint: #a89e90;
+    --line: #e3dccc; --accent: #c4522d;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --r-md: 8px; --r-lg: 16px; --page-pad: 2.5rem;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 var(--page-pad); }
+  .back-nav { padding: 1.5rem var(--page-pad); max-width: 800px; margin: 0 auto; display: flex; align-items: center; gap: 0.5rem; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; }
+  .back-nav:hover { color: var(--accent); }
+  .cs-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; }
+  .cs-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+  .pill { font-family: var(--mono); font-size: 0.62rem; padding: 0.28rem 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); background: var(--bg-alt); border-radius: 999px; }
+  .pill.accent { background: var(--accent); color: #fff; }
+  .cs-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-variation-settings: 'opsz' 144; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.25rem; }
+  .cs-lede { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--muted); font-variation-settings: 'opsz' 24; line-height: 1.55; max-width: 52ch; }
+  .cs-hero-img { margin: 3rem 0; aspect-ratio: 16 / 9; background: var(--bg-alt); border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+  .img-placeholder { font-family: var(--mono); font-size: 0.7rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.12em; }
+  .cs-metrics { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.5rem 0; margin-bottom: 4rem; }
+  .cs-metric .v { font-family: var(--serif); font-size: 2rem; color: var(--accent); font-variation-settings: 'opsz' 48; line-height: 1; }
+  .cs-metric .k { font-size: 0.78rem; color: var(--muted); margin-top: 0.35rem; }
+  .cs-metric + .cs-metric { padding-left: 1.5rem; border-left: 1px solid var(--line); }
+  .cs-body { max-width: 65ch; }
+  .cs-section { margin-bottom: 3.5rem; }
+  .cs-section-label { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; }
+  .cs-section-label::before { content: ''; width: 1.25rem; height: 1px; background: var(--accent); }
+  .cs-section h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-variation-settings: 'opsz' 72; margin-bottom: 1rem; line-height: 1.15; }
+  .cs-section p { font-size: 1rem; color: var(--ink-2); line-height: 1.75; margin-bottom: 1rem; }
+  .cs-section p:last-child { margin-bottom: 0; }
+  .cs-section strong { color: var(--ink); font-weight: 500; }
+  .cs-quote { border-left: 2px solid var(--accent); padding: 0.75rem 0 0.75rem 1.5rem; margin: 2.5rem 0; }
+  .cs-quote p { font-family: var(--serif); font-size: 1.2rem; font-variation-settings: 'opsz' 36; color: var(--ink); font-style: italic; line-height: 1.5; margin: 0; }
+  .cs-quote cite { display: block; font-family: var(--mono); font-size: 0.65rem; font-style: normal; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 0.6rem; }
+  .cs-footer { padding: 3rem 0; border-top: 1px solid var(--line); margin-top: 5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .cs-footer a { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+  .cs-footer a:hover { color: var(--accent); }
+  @media (max-width: 640px) {
+    :root { --page-pad: 1.25rem; }
+    .cs-metrics { grid-template-columns: 1fr; }
+    .cs-metric + .cs-metric { padding-left: 0; padding-top: 1rem; border-left: none; border-top: 1px solid var(--line); }
+  }
+</style>
 </head>
 <body>
-<!-- PLACEHOLDER — copy from case-studies/_template/index.html and fill in -->
-<!-- This page is linked from index.html but not yet written. -->
-<!-- Instructions: -->
-<!--   1. Copy _template/index.html into this folder -->
-<!--   2. Update the title, meta, pills, hero image, metrics, and body copy -->
-<!--   3. Add roos-india.jpg to assets/images/case-studies/ -->
-<!--   4. Update the href in index.html from "#" to "case-studies/roos-india/" -->
-<script>window.location.href='../../index.html#work';</script>
+
+<a href="../../index.html" class="back-nav">← Back to portfolio</a>
+
+<main>
+  <div class="wrap">
+
+    <div class="cs-hero">
+      <div class="cs-meta">
+        <span class="pill accent">Founder · 0 to 1</span>
+        <span class="pill">D2C · Sustainability</span>
+        <span class="pill">Zero CAC · Etsy Organic</span>
+        <span class="pill">2019–2020</span>
+      </div>
+      <h1 class="cs-title">Founding a sustainable label that put 1,000 women back in their own wardrobes.</h1>
+      <p class="cs-lede">I started ROOS India out of undergrad with no budget, no investors, and one conviction: that upcycled fashion did not have to look like a compromise.</p>
+    </div>
+
+    <div class="cs-hero-img">
+      <img src="../../assets/images/case-studies/roos-india.png" alt="ROOS India lookbook">
+    </div>
+
+    <div class="cs-metrics">
+      <div class="cs-metric">
+        <div class="v">Rs 5L+</div>
+        <div class="k">revenue · bootstrapped, pan-India</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">1,000+</div>
+        <div class="k">women in the repurpose community</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">Zero</div>
+        <div class="k">paid CAC on Etsy</div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+
+      <div class="cs-section">
+        <div class="cs-section-label">Context</div>
+        <h2>India's fashion industry produces waste at scale. Consumers were ready to care — if someone made it easy.</h2>
+        <p>India is one of the world's largest textile producers and also one of the largest generators of textile waste. The average urban household accumulates garments that are worn once or twice, stored indefinitely, and eventually discarded — not because they are worn out, but because they no longer feel relevant.</p>
+        <p>I started <strong>ROOS India</strong> in 2019 as a final-year undergrad with a specific hypothesis: that the sustainable fashion market was failing because it prioritised ethics over aesthetics. Consumers were not unwilling to buy sustainably — they were unwilling to buy ugly things. If you solved the design problem, the sustainability story would carry itself.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Problem</div>
+        <h2>Upcycled fashion had an identity problem, not a supply problem.</h2>
+        <p>The upcycled garment space in India was populated by brands that led with guilt. Packaging that reminded you how much waste you were preventing. Marketing that positioned the buyer as a responsible citizen rather than someone with good taste. The implicit message: you are buying this despite how it looks, not because of it.</p>
+        <p>This was the wrong frame. It created a customer who bought once to feel good and never came back. It also capped the price point — if the value proposition is moral rather than aesthetic, the customer compares you to a charity, not a fashion label.</p>
+        <p>The real opportunity: <strong>invert the proposition entirely</strong>. Lead with desirability. Let sustainability be the proof point that makes the desirability feel guilt-free, not the reason to tolerate an undesirable product.</p>
+      </div>
+
+      <blockquote class="cs-quote">
+        <p>"The garment you forgot you owned is exactly what someone else would love to wear. The problem is not supply. It is curation."</p>
+        <cite>The brand positioning that shaped every product and communication decision</cite>
+      </blockquote>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Approach</div>
+        <h2>Source from the customer. Rework for a different customer. Build a community around the transaction.</h2>
+        <p>ROOS operated a <strong>customer-sourced supply chain</strong>. Women submitted unused garments from their own wardrobes — sarees, kurtas, dupattas, western separates — which we assessed, accepted, and reworked into contemporary silhouettes. The original owner received store credit. A new buyer received something they could not find elsewhere.</p>
+        <p>This model solved two problems at once. It eliminated raw material cost (the biggest input for a bootstrapped label) and it created a community dynamic — submitters had skin in the game, which turned them into advocates. The person who sent in a saree told her friends when she saw it transformed into a jacket. That word-of-mouth was the acquisition channel.</p>
+        <p>The brand identity was designed to compete with premium D2C labels, not charity shops. Photography, packaging, and copy were held to the same standard as a mid-market fashion brand. The sustainability story appeared once the customer was already interested — not as the hook, but as the satisfying reveal.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Execution</div>
+        <h2>Built end-to-end: supply chain, brand, distribution, community.</h2>
+        <p>I ran every function: garment sourcing and quality assessment, rework briefing with tailoring partners in Mumbai, product photography, copywriting, Etsy storefront management, Instagram content, and community management across WhatsApp groups where the repurposing community lived.</p>
+        <p>Distribution was multi-channel from the start. <strong>Etsy</strong> provided international discovery at zero acquisition cost — the platform's algorithm surfaces handmade and vintage goods to buyers actively looking for them. <strong>Instagram</strong> served as the primary brand channel and DM-based ordering system for Indian customers. Physical showcases — including a curated pop-up at <strong>Khar Gymkhana in Mumbai</strong> — provided the tactile proof point that upcycled could mean beautiful.</p>
+        <p>The Khar Gymkhana event was the first moment the community saw the full ROOS vision in person. It converted observers into buyers and buyers into community members — the WhatsApp group grew by 40% in the week following the pop-up.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Impact</div>
+        <h2>Revenue, community, and a replicable model — all bootstrapped.</h2>
+        <p>ROOS generated <strong>Rs 5L+ in revenue from a standing start</strong>, with zero external capital. More than <strong>500 garments were sold pan-India</strong>, with international orders via Etsy to the UK, US, and UAE. The repurpose community grew to <strong>1,000+ women</strong> actively submitting garments, sharing transformations, and referring new members.</p>
+        <p>The Etsy channel achieved a <strong>zero paid CAC</strong> — every sale came through organic platform discovery or community referral. Return customer rate among Indian buyers was above 35% over the 18-month active period, which is significantly above benchmark for a single-category fashion brand.</p>
+        <p>The model proved that desirability-first sustainable fashion could work at the unit economics level without VC funding or paid acquisition — a data point I have carried into every subsequent role when evaluating growth strategy.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Learnings</div>
+        <h2>Community is an asset. Treat it like one from day one.</h2>
+        <p>The WhatsApp community was the most valuable thing ROOS built — more valuable than the Etsy storefront, the Instagram following, or any individual product. But it was built reactively, not intentionally. I did not instrument it, I did not have an explicit strategy for it, and when ROOS paused operations for me to pursue graduate education, the community dissipated faster than it should have.</p>
+        <p>If I rebuilt ROOS today, the community infrastructure would be the first thing I designed — with clear onboarding, content cadence, and a structure that could survive my absence. The lesson: <strong>informal communities are fragile; designed communities are durable</strong>. The engagement was there. The architecture was not.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cs-footer">
+      <a href="../../index.html">← All work</a>
+      <a href="../loreal-cannes/">Next: L'Oréal Paris Cannes →</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

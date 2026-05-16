@@ -1,28 +1,24 @@
 # Hero portrait
 
-Place your professional headshot here.
+Your photo is already wired up. The file `khushbu-kothari.jpg` in this folder is live on the site.
 
-**File name:** `portrait.jpg`
-**Ratio:** 4:5 (portrait orientation)
+**Current file:** `khushbu-kothari.jpg` (copied from "Khushbu Kothari PHOTO.jpeg")
+**Ratio needed:** 4:5 (portrait orientation)
 **Recommended size:** 800 × 1000 px
-**Max file size:** 200 KB (compress at squoosh.app)
+**Max file size:** 200 KB (compress at squoosh.app if needed)
 
-## How to wire it up
+## To replace with a better photo
 
-In `index.html`, find the `.portrait` div in the Hero section and replace it with:
+Drop a new file named `khushbu-kothari.jpg` into this folder — it will overwrite the current one and update the site instantly.
+
+The img tag in `index.html` (Hero section) already points to this filename:
 
 ```html
-<img
-  src="assets/images/hero/portrait.jpg"
-  alt="Khushbu Kothari"
-  style="width:100%;aspect-ratio:4/5;object-fit:cover;
-         border-radius:var(--r-lg);box-shadow:var(--shadow-3);">
+<img src="assets/images/hero/khushbu-kothari.jpg" alt="Khushbu Kothari" ...>
 ```
-
-Delete the entire `.portrait` div (including the `ph-tag` inside it) once the image is in.
 
 ## Tips
 
-- Use a plain or softly blurred background — the cream page colour (`#faf7f0`) will frame it.
-- Shoot in natural light if possible.
-- Crop so the face occupies the top 60% of the frame.
+- Plain or softly blurred background — the cream page colour (`#faf7f0`) frames it well.
+- Natural light if possible.
+- Face in the top 60% of the frame, some shoulder/chest visible below.

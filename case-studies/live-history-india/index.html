@@ -4,16 +4,162 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Live History India — Khushbu Kothari</title>
-<meta name="description" content="How a cultural platform raised $5M and found 20K monthly visitors in 90 days. By Khushbu Kothari.">
+<meta name="description" content="How I helped a cultural platform go from zero to $5M raised and 20K monthly visitors in 90 days. By Khushbu Kothari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f0; --bg-alt: #f1ece1; --bg-dark: #15110d;
+    --ink: #15110d; --ink-2: #2d2620; --muted: #6b6258; --faint: #a89e90;
+    --line: #e3dccc; --accent: #c4522d;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --r-md: 8px; --r-lg: 16px; --page-pad: 2.5rem;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 var(--page-pad); }
+  .back-nav { padding: 1.5rem var(--page-pad); max-width: 800px; margin: 0 auto; display: flex; align-items: center; gap: 0.5rem; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; }
+  .back-nav:hover { color: var(--accent); }
+  .cs-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; }
+  .cs-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+  .pill { font-family: var(--mono); font-size: 0.62rem; padding: 0.28rem 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); background: var(--bg-alt); border-radius: 999px; }
+  .pill.accent { background: var(--accent); color: #fff; }
+  .cs-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-variation-settings: 'opsz' 144; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.25rem; }
+  .cs-lede { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--muted); font-variation-settings: 'opsz' 24; line-height: 1.55; max-width: 52ch; }
+  .cs-hero-img { margin: 3rem 0; aspect-ratio: 16 / 9; background: var(--bg-alt); border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+  .img-placeholder { font-family: var(--mono); font-size: 0.7rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.12em; }
+  .cs-metrics { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.5rem 0; margin-bottom: 4rem; }
+  .cs-metric .v { font-family: var(--serif); font-size: 2rem; color: var(--accent); font-variation-settings: 'opsz' 48; line-height: 1; }
+  .cs-metric .k { font-size: 0.78rem; color: var(--muted); margin-top: 0.35rem; }
+  .cs-metric + .cs-metric { padding-left: 1.5rem; border-left: 1px solid var(--line); }
+  .cs-body { max-width: 65ch; }
+  .cs-section { margin-bottom: 3.5rem; }
+  .cs-section-label { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; }
+  .cs-section-label::before { content: ''; width: 1.25rem; height: 1px; background: var(--accent); }
+  .cs-section h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-variation-settings: 'opsz' 72; margin-bottom: 1rem; line-height: 1.15; }
+  .cs-section p { font-size: 1rem; color: var(--ink-2); line-height: 1.75; margin-bottom: 1rem; }
+  .cs-section p:last-child { margin-bottom: 0; }
+  .cs-section strong { color: var(--ink); font-weight: 500; }
+  .cs-quote { border-left: 2px solid var(--accent); padding: 0.75rem 0 0.75rem 1.5rem; margin: 2.5rem 0; }
+  .cs-quote p { font-family: var(--serif); font-size: 1.2rem; font-variation-settings: 'opsz' 36; color: var(--ink); font-style: italic; line-height: 1.5; margin: 0; }
+  .cs-quote cite { display: block; font-family: var(--mono); font-size: 0.65rem; font-style: normal; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 0.6rem; }
+  .cs-footer { padding: 3rem 0; border-top: 1px solid var(--line); margin-top: 5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .cs-footer a { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+  .cs-footer a:hover { color: var(--accent); }
+  @media (max-width: 640px) {
+    :root { --page-pad: 1.25rem; }
+    .cs-metrics { grid-template-columns: 1fr; }
+    .cs-metric + .cs-metric { padding-left: 0; padding-top: 1rem; border-left: none; border-top: 1px solid var(--line); }
+  }
+</style>
 </head>
 <body>
-<!-- PLACEHOLDER — copy from case-studies/_template/index.html and fill in -->
-<!-- This page is linked from index.html but not yet written. -->
-<!-- Instructions: -->
-<!--   1. Copy _template/index.html into this folder -->
-<!--   2. Update the title, meta, pills, hero image, metrics, and body copy -->
-<!--   3. Add live-history.jpg to assets/images/case-studies/ -->
-<!--   4. Update the href in index.html from "#" to "case-studies/live-history-india/" -->
-<script>window.location.href='../../index.html#work';</script>
+
+<a href="../../index.html" class="back-nav">← Back to portfolio</a>
+
+<main>
+  <div class="wrap">
+
+    <div class="cs-hero">
+      <div class="cs-meta">
+        <span class="pill accent">Founder's Office</span>
+        <span class="pill">Strategy · GTM · Product</span>
+        <span class="pill">Peepul Tree Ventures</span>
+        <span class="pill">2022–2024</span>
+      </div>
+      <h1 class="cs-title">Helping a cultural platform raise $5M and find its first 20,000 users.</h1>
+      <p class="cs-lede">Live History India needed product traction, audience signals, and a fundable narrative — simultaneously, with no brand equity and no precedent for what a cultural commerce platform even was.</p>
+    </div>
+
+    <div class="cs-hero-img">
+      <img src="../../assets/images/case-studies/live-history-india.png" alt="Live History India platform">
+    </div>
+
+    <div class="cs-metrics">
+      <div class="cs-metric">
+        <div class="v">$5M</div>
+        <div class="k">seed round — traction data anchored the raise</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">20K+</div>
+        <div class="k">monthly visitors · 90 days from launch</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">500+</div>
+        <div class="k">creator community built from zero</div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+
+      <div class="cs-section">
+        <div class="cs-section-label">Context</div>
+        <h2>A platform combining Indian heritage storytelling with artisan commerce.</h2>
+        <p>Live History India is a digital platform that publishes long-form historical and cultural content about the Indian subcontinent — stories of dynasties, craft traditions, monuments, and makers — and connects readers to artisan products tied to those narratives. Think editorial depth with a commerce layer sitting underneath it.</p>
+        <p>I joined as a core member of the <strong>Founder's Office at Peepul Tree Ventures</strong>, the parent company, working directly with the founders across product, content strategy, growth, and investor relations. The mandate was clear and difficult: launch the platform, get it to a state of demonstrable traction, and build the data story that would make institutional investors want in.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Problem</div>
+        <h2>Three problems that could not be solved sequentially.</h2>
+        <p>The platform faced a classic cold-start problem with compounding difficulty. <strong>No audience</strong> meant no commerce. No commerce meant no artisan relationships. No artisan relationships meant nothing to show investors. And investors needed proof before the next round could close — which was the funding needed to build the audience in the first place.</p>
+        <p>The strategic challenge was that all three loops — content audience, artisan supply, and investor narrative — had to move at the same time. Solving them in order would take too long. They had to be solved in parallel, each feeding signal into the others.</p>
+        <p>A further complication: there was no template for this. Cultural-heritage commerce platforms do not have established playbooks. Most analogs (Artsy, Etsy, Atlas Obscura) occupied different adjacencies. We were operating in whitespace, which meant we had to generate our own proof of concept while building the thing.</p>
+      </div>
+
+      <blockquote class="cs-quote">
+        <p>"We did not need a big audience. We needed the right signal from a small one — and we needed to know exactly what to measure."</p>
+        <cite>The framing that shaped how we structured the first 90 days</cite>
+      </blockquote>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Approach</div>
+        <h2>Ship fast. Measure everything. Turn signal into narrative.</h2>
+        <p>I drove the <strong>MVP launch across three commerce channels simultaneously</strong> — Shopify (owned), Etsy (discovery), and Amazon (distribution reach) — within the first eight weeks. This was not a phased rollout. Running all three in parallel let us compare acquisition cost, conversion quality, and retention cohort by channel — data that a single-channel launch could not generate.</p>
+        <p>For audience growth, I built and seeded a <strong>500+ creator micro-community</strong> across WhatsApp and Facebook groups, recruiting historians, heritage travel writers, craft enthusiasts, and cultural educators. This community was not just a distribution channel — it was a content source and a qualitative research layer. We could test framing, headline angles, and product descriptions directly with people who cared deeply about the subject matter.</p>
+        <p>Weekly, I tracked <strong>cohort retention, GMV per content category, and artisan product attachment rate</strong> (the percentage of content readers who clicked through to a product within a session). These three numbers became the core of the investor data story: we were not just building an audience, we were building a monetisable one.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Execution</div>
+        <h2>Across product, content, community, and investor relations — simultaneously.</h2>
+        <p>On the product side, I collaborated with the tech team to configure the Shopify storefront and set up the analytics instrumentation — GA4, Hotjar heatmaps, and a lightweight CRM to track repeat visitors. On the content side, I built the editorial calendar and briefed the first cohort of writers, establishing the structure that connected each story to at least one purchasable craft object.</p>
+        <p>The <strong>creator community</strong> was seeded through direct outreach across Instagram, Twitter, and LinkedIn — identifying people whose existing content overlapped with Indian history, craft, or heritage travel. The value exchange was simple: early access to long-form content before publication, in exchange for sharing it with their audiences.</p>
+        <p>I also owned a significant portion of the <strong>investor deck narrative</strong>, translating weekly data into the cohort charts and retention curves that became the traction section of the Series A materials.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Impact</div>
+        <h2>Traction in 90 days. Capital at the finish line.</h2>
+        <p>The platform reached <strong>20,000+ monthly visitors within three months of launch</strong> — a number that, crucially, came with a clear data story: which content categories drove the most return visits, which artisan product clusters had the highest attachment rate, and what the 30-day retention curve looked like for newsletter-acquired users versus organic search.</p>
+        <p>Artisan product sales <strong>doubled</strong> between the first and third month, driven by the content-to-commerce attachment model — readers who came for the historical narrative converted to buyers at a meaningfully higher rate than category benchmarks for comparable commerce properties.</p>
+        <p>The early traction data anchored the investor narrative that <strong>helped close a $5M seed round</strong>. The numbers were not large by growth-stage standards, but they were structured, reproducible, and pointed clearly at a thesis that held. That combination — honest metrics with a coherent story — is what moved investors.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Learnings</div>
+        <h2>Investor narrative is a product problem, not a communications problem.</h2>
+        <p>The mistake most early-stage teams make with fundraising is treating the investor deck as something you build after you have results. We treated it as something we built while designing the launch — which forced us to instrument the right things from day one, not scramble to find a meaningful number three months later.</p>
+        <p>The specific lesson: <strong>decide what metric proves your thesis before you launch</strong>, build the infrastructure to track it cleanly, and then run the experiment. If you do that, the story writes itself. If you do not, you spend six weeks in post-hoc rationalisation — and sophisticated investors can see that clearly.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cs-footer">
+      <a href="../../index.html">← All work</a>
+      <a href="../roos-india/">Next: ROOS India →</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

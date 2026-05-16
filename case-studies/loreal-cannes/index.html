@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Oréal Paris Cannes Shoppable — Khushbu Kothari</title>
+<meta name="description" content="Making the Cannes red carpet shoppable in India: 10x sales, 1.2M Nykaa store visits, 42M reach. By Khushbu Kothari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f0; --bg-alt: #f1ece1; --bg-dark: #15110d;
+    --ink: #15110d; --ink-2: #2d2620; --muted: #6b6258; --faint: #a89e90;
+    --line: #e3dccc; --accent: #c4522d;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --r-md: 8px; --r-lg: 16px; --page-pad: 2.5rem;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 var(--page-pad); }
+  .back-nav { padding: 1.5rem var(--page-pad); max-width: 800px; margin: 0 auto; display: flex; align-items: center; gap: 0.5rem; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; }
+  .back-nav:hover { color: var(--accent); }
+  .cs-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; }
+  .cs-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+  .pill { font-family: var(--mono); font-size: 0.62rem; padding: 0.28rem 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); background: var(--bg-alt); border-radius: 999px; }
+  .pill.accent { background: var(--accent); color: #fff; }
+  .cs-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-variation-settings: 'opsz' 144; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.25rem; }
+  .cs-lede { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--muted); font-variation-settings: 'opsz' 24; line-height: 1.55; max-width: 52ch; }
+  .cs-hero-img { margin: 3rem 0; aspect-ratio: 16 / 9; background: var(--bg-alt); border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+  .img-placeholder { font-family: var(--mono); font-size: 0.7rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.12em; }
+  .cs-metrics { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.5rem 0; margin-bottom: 4rem; }
+  .cs-metric .v { font-family: var(--serif); font-size: 2rem; color: var(--accent); font-variation-settings: 'opsz' 48; line-height: 1; }
+  .cs-metric .k { font-size: 0.78rem; color: var(--muted); margin-top: 0.35rem; }
+  .cs-metric + .cs-metric { padding-left: 1.5rem; border-left: 1px solid var(--line); }
+  .cs-body { max-width: 65ch; }
+  .cs-section { margin-bottom: 3.5rem; }
+  .cs-section-label { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; }
+  .cs-section-label::before { content: ''; width: 1.25rem; height: 1px; background: var(--accent); }
+  .cs-section h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-variation-settings: 'opsz' 72; margin-bottom: 1rem; line-height: 1.15; }
+  .cs-section p { font-size: 1rem; color: var(--ink-2); line-height: 1.75; margin-bottom: 1rem; }
+  .cs-section p:last-child { margin-bottom: 0; }
+  .cs-section strong { color: var(--ink); font-weight: 500; }
+  .cs-stat-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0; }
+  .cs-stat { background: var(--bg-alt); border-radius: var(--r-md); padding: 1rem 1.25rem; border: 1px solid var(--line); }
+  .cs-stat .sv { font-family: var(--serif); font-size: 1.6rem; color: var(--accent); font-variation-settings: 'opsz' 48; line-height: 1; }
+  .cs-stat .sk { font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; }
+  .cs-quote { border-left: 2px solid var(--accent); padding: 0.75rem 0 0.75rem 1.5rem; margin: 2.5rem 0; }
+  .cs-quote p { font-family: var(--serif); font-size: 1.2rem; font-variation-settings: 'opsz' 36; color: var(--ink); font-style: italic; line-height: 1.5; margin: 0; }
+  .cs-quote cite { display: block; font-family: var(--mono); font-size: 0.65rem; font-style: normal; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 0.6rem; }
+  .cs-footer { padding: 3rem 0; border-top: 1px solid var(--line); margin-top: 5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .cs-footer a { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+  .cs-footer a:hover { color: var(--accent); }
+  @media (max-width: 640px) {
+    :root { --page-pad: 1.25rem; }
+    .cs-metrics { grid-template-columns: 1fr; }
+    .cs-metric + .cs-metric { padding-left: 0; padding-top: 1rem; border-left: none; border-top: 1px solid var(--line); }
+    .cs-stat-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<a href="../../index.html" class="back-nav">← Back to portfolio</a>
+
+<main>
+  <div class="wrap">
+
+    <div class="cs-hero">
+      <div class="cs-meta">
+        <span class="pill accent">Social Commerce</span>
+        <span class="pill">Shoppable Campaign</span>
+        <span class="pill">L'Oréal Paris × Nykaa</span>
+        <span class="pill">Tonic Worldwide · 2025</span>
+      </div>
+      <h1 class="cs-title">Making the Cannes red carpet shoppable in real time.</h1>
+      <p class="cs-lede">L'Oréal Paris wanted Indian consumers to buy the beauty looks happening on the Cannes red carpet — live, as they watched. We built a social commerce system that collapsed the gap between aspiration and purchase.</p>
+    </div>
+
+    <div class="cs-hero-img">
+      <img src="../../assets/images/case-studies/loreal-paris-cannes.png" alt="L'Oréal Paris Cannes 2025 campaign">
+    </div>
+
+    <div class="cs-metrics">
+      <div class="cs-metric">
+        <div class="v">10x</div>
+        <div class="k">sales growth vs Cannes 2024</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">1.2M</div>
+        <div class="k">Nykaa store visits driven</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">42.45M</div>
+        <div class="k">total reach</div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+
+      <div class="cs-section">
+        <div class="cs-section-label">Context</div>
+        <h2>Cannes is L'Oréal's biggest annual cultural moment. It was not converting.</h2>
+        <p>L'Oréal Paris has been the official beauty partner of the Cannes Film Festival for decades. In India, the festival generates enormous organic reach — celebrity looks trend on Instagram within minutes of a red carpet appearance, editorial content dominates beauty media for weeks, and the L'Oréal ambassadors who attend (including several prominent Indian celebrities) create significant second-screen engagement.</p>
+        <p>The problem: almost none of that attention was converting to sales. The interest was real, the intent was there, but the path from "I want that look" to "I bought the product" had too many steps, too much friction, and arrived too late — by the time a consumer clicked through from editorial coverage to a product page, the cultural moment had passed.</p>
+        <p>As <strong>Content and Strategy Lead at Tonic Worldwide</strong>, I led the campaign architecture for the 2025 Cannes brief — the mandate being to close that gap between aspiration and purchase in real time.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Problem</div>
+        <h2>Beauty aspiration has a half-life of hours, not weeks.</h2>
+        <p>The core tension in beauty marketing around live events is temporal. A consumer who sees a look on the red carpet at 11pm on a Tuesday is maximally engaged at 11pm on that Tuesday. By Wednesday morning, the algorithmic window has shifted. By the following week, the look is archived.</p>
+        <p>Traditional campaign models were built for the wrong timeline — content produced after the event, distributed through editorial partnerships, and linked to product pages that were not optimised for the spike. The result: L'Oréal captured massive awareness during Cannes and a fraction of the conversion that awareness should have produced.</p>
+        <p>The specific product-level insight: <strong>Hyaluron Pure</strong>, one of the hero SKUs featured in ambassador looks, had strong brand awareness in India but relatively modest sell-through. Consumers knew the product. They were not buying it. The Cannes moment was the opportunity to change that — if we could get the right message to the right person at the moment she was watching.</p>
+      </div>
+
+      <blockquote class="cs-quote">
+        <p>"The red carpet is not a broadcast moment. It is a commerce moment — if you architect it correctly."</p>
+        <cite>The strategic frame that shaped the campaign</cite>
+      </blockquote>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Approach</div>
+        <h2>A real-time content system that turned every carpet look into a shoppable asset.</h2>
+        <p>We designed the campaign as a <strong>live social commerce system</strong> built on four interconnected layers:</p>
+        <p><strong>Real-time product mapping.</strong> We pre-built a product-look catalogue linking every L'Oréal Paris product that any ambassador might wear on the carpet, with Nykaa product page URLs, pricing, and copy ready to deploy. When a look was confirmed on the carpet, the relevant product card went live within 45 minutes across Instagram Stories, Reels, and the Nykaa storefront.</p>
+        <p><strong>Gamified engagement modules.</strong> Rather than passive consumption, we built interactive elements — a "Get the Look" game where users matched carpet looks to products, with winners receiving Nykaa vouchers. This created dwell time, data on product preference, and a viral mechanic that extended organic reach without additional media spend.</p>
+        <p><strong>Ambassador look conversion.</strong> Every appearance by a L'Oréal Paris ambassador was treated as a shoppable moment: full-look breakdowns published to Instagram within the hour, linked directly to Nykaa product pages with a campaign-specific UTM structure for clean attribution.</p>
+        <p><strong>Influencer amplification at speed.</strong> We pre-briefed a tier-two influencer cohort on the look-to-product framework so they could publish their own "dupes" and reactions within hours of each carpet appearance, using already-prepared product links and talking points.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Execution</div>
+        <h2>An operations problem as much as a creative one.</h2>
+        <p>Cannes runs over ten days. We operated a near-continuous content production and distribution cycle across the full festival period. My role spanned the strategy architecture, the content framework, the influencer briefing system, and the real-time editorial decisions about which looks to prioritise and how to sequence them across channels.</p>
+        <p>The Nykaa partnership required close coordination with their merchandising and storefront team — product pages had to be updated in near-real-time to reflect the campaign, with accurate stock levels and campaign-specific copy. We built a shared operational channel that let the Tonic team push updates to Nykaa within the 45-minute window.</p>
+        <p>The gamified module ran on Nykaa's platform and was promoted through L'Oréal's owned social channels. Managing the prize fulfilment, the technical deployment, and the content around the game simultaneously — while also running the live editorial operation — required the kind of project management that does not show up in the creative awards entry but determines whether anything ships at all.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Impact</div>
+        <h2>Commerce metrics that a brand awareness campaign almost never produces.</h2>
+
+        <div class="cs-stat-row">
+          <div class="cs-stat">
+            <div class="sv">10x</div>
+            <div class="sk">Sales growth vs Cannes 2024</div>
+          </div>
+          <div class="cs-stat">
+            <div class="sv">175%</div>
+            <div class="sk">Makeup category sales spike</div>
+          </div>
+          <div class="cs-stat">
+            <div class="sv">1.2M</div>
+            <div class="sk">Nykaa store visits</div>
+          </div>
+          <div class="cs-stat">
+            <div class="sv">13K</div>
+            <div class="sk">Games played</div>
+          </div>
+        </div>
+
+        <p>The campaign generated <strong>42.45M total reach, 46.24M impressions, and a 4.12% engagement rate</strong> — comfortably above benchmark for beauty campaigns at this scale. The <strong>Hyaluron Pure SKU</strong> sold at a rate of more than one unit per minute during the peak Cannes window, a sell-through rate the brand had not previously achieved outside of major promotional events.</p>
+        <p>More significantly: <strong>1.2M visits to the Nykaa L'Oréal Paris storefront</strong> represented a measurable shift from earned-media awareness to earned-media conversion — which is the hardest metric to move in beauty marketing at scale. The gamified module's 13,000 completions provided L'Oréal with a first-party data asset (product preference signals at the SKU level) with clear downstream value for retargeting and personalisation.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Learnings</div>
+        <h2>Social commerce is an operations challenge that lives inside a creative brief.</h2>
+        <p>The campaign worked because we treated it as an operations problem from the beginning — not an afterthought. The real-time content system, the pre-built product catalogue, the influencer briefing protocol, the Nykaa editorial coordination: none of these are glamorous, and none of them appear in the final creative. But remove any one of them and the 45-minute response window becomes four hours, and the commerce result collapses.</p>
+        <p>The broader lesson for product and brand teams: <strong>shoppable content strategies fail at the operations layer, not the concept layer</strong>. The concept — "make the red carpet shoppable" — is obvious. Executing it in real time, at festival pace, across multiple platforms and a retail partner, with accurate attribution, is the actual problem. That is where the strategy has to live.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cs-footer">
+      <a href="../../index.html">← All work</a>
+      <a href="../dabur-starwars/">Next: Dabur x Star Wars →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

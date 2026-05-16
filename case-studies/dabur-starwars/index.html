@@ -5,15 +5,161 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dabur Herb'l x Star Wars — Khushbu Kothari</title>
 <meta name="description" content="How a heritage herbal toothpaste became a Gen Z pop-culture moment. Silver E4M, Bronze ET Digiplus. By Khushbu Kothari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f0; --bg-alt: #f1ece1; --bg-dark: #15110d;
+    --ink: #15110d; --ink-2: #2d2620; --muted: #6b6258; --faint: #a89e90;
+    --line: #e3dccc; --accent: #c4522d;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --r-md: 8px; --r-lg: 16px; --page-pad: 2.5rem;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 var(--page-pad); }
+  .back-nav { padding: 1.5rem var(--page-pad); max-width: 800px; margin: 0 auto; display: flex; align-items: center; gap: 0.5rem; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; }
+  .back-nav:hover { color: var(--accent); }
+  .cs-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--line); margin-bottom: 4rem; }
+  .cs-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+  .pill { font-family: var(--mono); font-size: 0.62rem; padding: 0.28rem 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); background: var(--bg-alt); border-radius: 999px; }
+  .pill.accent { background: var(--accent); color: #fff; }
+  .cs-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); font-variation-settings: 'opsz' 144; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.25rem; }
+  .cs-lede { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--muted); font-variation-settings: 'opsz' 24; line-height: 1.55; max-width: 52ch; }
+  .cs-hero-img { margin: 3rem 0; aspect-ratio: 16 / 9; background: var(--bg-alt); border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+  .img-placeholder { font-family: var(--mono); font-size: 0.7rem; color: var(--faint); text-transform: uppercase; letter-spacing: 0.12em; }
+  .cs-metrics { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.5rem 0; margin-bottom: 4rem; }
+  .cs-metric .v { font-family: var(--serif); font-size: 2rem; color: var(--accent); font-variation-settings: 'opsz' 48; line-height: 1; }
+  .cs-metric .k { font-size: 0.78rem; color: var(--muted); margin-top: 0.35rem; }
+  .cs-metric + .cs-metric { padding-left: 1.5rem; border-left: 1px solid var(--line); }
+  .cs-body { max-width: 65ch; }
+  .cs-section { margin-bottom: 3.5rem; }
+  .cs-section-label { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; }
+  .cs-section-label::before { content: ''; width: 1.25rem; height: 1px; background: var(--accent); }
+  .cs-section h2 { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-variation-settings: 'opsz' 72; margin-bottom: 1rem; line-height: 1.15; }
+  .cs-section p { font-size: 1rem; color: var(--ink-2); line-height: 1.75; margin-bottom: 1rem; }
+  .cs-section p:last-child { margin-bottom: 0; }
+  .cs-section strong { color: var(--ink); font-weight: 500; }
+  .cs-quote { border-left: 2px solid var(--accent); padding: 0.75rem 0 0.75rem 1.5rem; margin: 2.5rem 0; }
+  .cs-quote p { font-family: var(--serif); font-size: 1.2rem; font-variation-settings: 'opsz' 36; color: var(--ink); font-style: italic; line-height: 1.5; margin: 0; }
+  .cs-quote cite { display: block; font-family: var(--mono); font-size: 0.65rem; font-style: normal; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 0.6rem; }
+  .cs-footer { padding: 3rem 0; border-top: 1px solid var(--line); margin-top: 5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .cs-footer a { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); transition: color 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+  .cs-footer a:hover { color: var(--accent); }
+  @media (max-width: 640px) {
+    :root { --page-pad: 1.25rem; }
+    .cs-metrics { grid-template-columns: 1fr; }
+    .cs-metric + .cs-metric { padding-left: 0; padding-top: 1rem; border-left: none; border-top: 1px solid var(--line); }
+  }
+</style>
 </head>
 <body>
-<!-- PLACEHOLDER — copy from case-studies/_template/index.html and fill in -->
-<!-- This page is linked from index.html but not yet written. -->
-<!-- Instructions: -->
-<!--   1. Copy _template/index.html into this folder -->
-<!--   2. Update the title, meta, pills, hero image, metrics, and body copy -->
-<!--   3. Add dabur-starwars.jpg to assets/images/case-studies/ -->
-<!--   4. Update the href in index.html from "#" to "case-studies/dabur-starwars/" -->
-<script>window.location.href='../../index.html#work';</script>
+
+<a href="../../index.html" class="back-nav">← Back to portfolio</a>
+
+<main>
+  <div class="wrap">
+
+    <div class="cs-hero">
+      <div class="cs-meta">
+        <span class="pill accent">Silver · Exchange4Media</span>
+        <span class="pill accent">Bronze · ET Digiplus</span>
+        <span class="pill">Brand Campaign</span>
+        <span class="pill">Tonic Worldwide</span>
+        <span class="pill">2024</span>
+      </div>
+      <h1 class="cs-title">Making a heritage herbal toothpaste irresistible to Gen Z.</h1>
+      <p class="cs-lede">Dabur Herb'l had decades of trust and zero cultural currency with 18–28 urban consumers. We changed that by borrowing the most recognisable mythology in the world.</p>
+    </div>
+
+    <div class="cs-hero-img">
+      <img src="../../assets/images/case-studies/dabur-herbl-x-star-wars.jpg" alt="Dabur Herb'l × Star Wars campaign">
+    </div>
+
+    <div class="cs-metrics">
+      <div class="cs-metric">
+        <div class="v">Silver</div>
+        <div class="k">Exchange4Media Awards 2024</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">Bronze</div>
+        <div class="k">ET Digiplus Awards 2024</div>
+      </div>
+      <div class="cs-metric">
+        <div class="v">10+</div>
+        <div class="k">marquee brands managed concurrently</div>
+      </div>
+    </div>
+
+    <div class="cs-body">
+
+      <div class="cs-section">
+        <div class="cs-section-label">Context</div>
+        <h2>A Rs 2,000 Cr brand that younger India had stopped listening to.</h2>
+        <p>Dabur Herb'l is Dabur's flagship herbal toothpaste line, built on decades of Ayurvedic credibility and distributed across 6 million retail touchpoints. In the oral care category, it competes with Colgate and Sensodyne on the mainstream end, and a wave of D2C herbal challengers — Himalaya, Patanjali, Perfora — on the naturals end.</p>
+        <p>The brief for 2024: <strong>re-establish Herb'l as a desirable, culturally relevant brand among 18–28 urban consumers</strong> without abandoning the existing core base. At Tonic Worldwide, I led the Content and Strategy function on the account, working across creative, media, and brand.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Problem</div>
+        <h2>Herbal was a category. It was not an identity.</h2>
+        <p>The research pointed to a clear tension: younger urban consumers did not reject herbal claims, they were indifferent to them. "Natural" had become table stakes across every FMCG category. Ayurveda, without a cultural wrapper, read as a parent's brand — something you used because you were told to, not because it said something about you.</p>
+        <p>The competitive set was doing one of two things: functional proof-points (whiter teeth, stronger enamel) or wellness aesthetics (clean labels, glass jars). Neither was territory Herb'l could credibly or quickly own.</p>
+        <p>The insight: Gen Z does not want a brand's values. They want to borrow a brand's <strong>world</strong>. The most powerful worlds in 2024 lived inside IP.</p>
+      </div>
+
+      <blockquote class="cs-quote">
+        <p>"The force of nature was already in the name. We just needed the right mythology to make it land."</p>
+        <cite>Strategic insight that anchored the campaign</cite>
+      </blockquote>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Approach</div>
+        <h2>Borrow the biggest IP in the world. Earn its credibility, don't rent it.</h2>
+        <p>We structured the campaign around the <strong>"Force of Nature"</strong> brand idea — a deliberate bridge between Herb'l's herbal origins and the Star Wars mythology of natural power versus synthetic force. This was not a badge licensing play. The narrative logic had to hold: every creative expression needed to make the IP feel like a natural extension of what Herb'l already was, not a costume it was wearing.</p>
+        <p>The content system had three layers. <strong>Hero content</strong> — high-production brand films that established the universe and seeded cultural credibility. <strong>Hub content</strong> — creator partnerships where influencers in the 18–28 bracket naturalised the brand association through their own voice and format. <strong>Hygiene content</strong> — always-on social, performance creative, and product posts that kept the campaign live between hero drops.</p>
+        <p>I used <strong>AI-assisted content tooling</strong> — Google AI Studio for rapid concept iteration and Claude for copy review — to compress the ideation-to-brief cycle from three days to under twelve hours, giving us more rounds with the client and tighter final executions.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Execution</div>
+        <h2>A cross-functional sprint across creative, media, and brand.</h2>
+        <p>I owned the strategy brief, the content architecture, and the creator selection framework. The campaign ran across YouTube (hero films), Instagram Reels (creator amplification), and Meta performance (retargeting with product-linked creative). We coordinated with Dabur's internal brand team on IP compliance — a non-trivial process given the Lucasfilm licensing requirements — and with the media agency on sequencing.</p>
+        <p>Timeline: 12 weeks from brief to go-live. The brand film launched in Q2 2024 and ran through Q3, with creator content seeded across the same window to build surround-sound without a single spike-and-drop pattern.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Impact</div>
+        <h2>Two national awards. A playbook for heritage-brand reinvention.</h2>
+        <p>The campaign won <strong>Silver at Exchange4Media Awards 2024</strong> and <strong>Bronze at ET Digiplus Awards 2024</strong>. Brand consideration among the 18–28 segment showed a measurable lift in the post-campaign brand track.</p>
+        <p>The downstream effect mattered as much as the headline results. Tonic Worldwide now uses the Hero/Hub/Hygiene content architecture and the IP-as-cultural-bridge strategic framework as a replicable template for heritage brand briefs — applied subsequently on Colgate and Park Avenue accounts.</p>
+        <p>The AI-assisted ideation workflow I introduced on this account was adopted as standard practice for strategy briefs across the agency, compressing the research-to-hypothesis cycle that previously consumed most of a strategist's week.</p>
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-section-label">Learnings</div>
+        <h2>IP amplifies. It does not substitute.</h2>
+        <p>The biggest risk in IP-led campaigns is that the licensed world does the talking and the brand goes quiet. Early cuts on the hero film leaned so far into the Star Wars aesthetic that Herb'l could have been swapped out for any product. The fix: enforcing a "remove the IP" test on every execution. If the brand story still held without the Star Wars frame, the frame was earning its keep. If it collapsed, we rewrote.</p>
+        <p>The discipline that saved the campaign was having a clear creative strategy brief that the entire team — including external creators — could interrogate. Without it, licensed campaigns become mood boards. With it, they become arguments.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cs-footer">
+      <a href="../../index.html">← All work</a>
+      <a href="../live-history-india/">Next: Live History India →</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

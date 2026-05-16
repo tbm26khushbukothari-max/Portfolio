@@ -27,20 +27,23 @@ KK Portfolio/
 │
 ├── assets/
 │   ├── images/
-│   │   ├── hero/                portrait.jpg — 4:5 ratio headshot
+│   │   ├── hero/                khushbu-kothari.jpg — LIVE (wired up) · 4:5 headshot
 │   │   ├── about/               about-photo.jpg — 4:5 casual/working photo
-│   │   ├── case-studies/        dabur-starwars.jpg, live-history.jpg, roos-india.jpg (4:3)
-│   │   └── projects/            galleri5.jpg, zyngai.jpg, rusticks.jpg,
-│   │                            anita-dongre.jpg, bearcare.jpg, park-avenue.jpg (16:10)
+│   │   ├── case-studies/        dabur-herbl-x-star-wars.jpg, live-history-india.jpg,
+│   │   │                        roos-india.jpg, loreal-paris-cannes.jpg (4:3)
+│   │   └── projects/            loreal-paris-cannes.jpg, galleri5-x-myntra-eors.jpg,
+│   │                            zyngai.jpg, rusticks.jpg, anita-dongre.jpg,
+│   │                            bearcare.jpg, park-avenue.jpg (16:10)
 │   ├── pdf/                     resume-khushbu-kothari.pdf — one-page CV
 │   ├── favicon/                 favicon.ico (32x32), og-image.jpg (1200x630)
 │   └── brand/                   Brand assets Khushbu owns rights to
 │
-├── case-studies/                Future individual case study pages
+├── case-studies/                Individual case study pages — all four written
 │   ├── _template/index.html     Starter template — copy and rename
-│   ├── dabur-starwars/
-│   ├── live-history-india/
-│   └── roos-india/
+│   ├── dabur-starwars/          LIVE — linked from index.html
+│   ├── live-history-india/      LIVE — linked from index.html
+│   ├── roos-india/              LIVE — linked from index.html
+│   └── loreal-cannes/           LIVE — linked from More Work grid
 │
 ├── writing/                     Future articles and thought leadership
 │   └── _template/index.html
@@ -138,15 +141,24 @@ Each renders as a gradient until the real image is dropped in.
 
 ## Recommended image specs
 
-| Slot | File | Ratio | Recommended size |
-|---|---|---|---|
-| Hero portrait | `assets/images/hero/portrait.jpg` | 4:5 | 800×1000px |
-| About photo | `assets/images/about/about-photo.jpg` | 4:5 | 800×1000px |
-| Case study 01 | `assets/images/case-studies/dabur-starwars.jpg` | 4:3 | 1200×900px |
-| Case study 02 | `assets/images/case-studies/live-history.jpg` | 4:3 | 1200×900px |
-| Case study 03 | `assets/images/case-studies/roos-india.jpg` | 4:3 | 1200×900px |
-| Project cards (×6) | `assets/images/projects/*.jpg` | 16:10 | 800×500px |
-| OG image | `assets/favicon/og-image.jpg` | 1200:630 | 1200×630px |
+Image filenames match exactly what is displayed on screen. Drop the file in with the exact name below.
+
+| Screen label | Save as | Folder | Ratio | Size |
+|---|---|---|---|---|
+| Hero portrait | `khushbu-kothari.jpg` ✅ LIVE | `assets/images/hero/` | 4:5 | 800×1000px |
+| About photo | `about-photo.jpg` | `assets/images/about/` | 4:5 | 800×1000px |
+| Dabur Herb'l × Star Wars | `dabur-herbl-x-star-wars.jpg` | `assets/images/case-studies/` | 4:3 | 1200×900px |
+| Live History India | `live-history-india.jpg` | `assets/images/case-studies/` | 4:3 | 1200×900px |
+| ROOS India | `roos-india.jpg` | `assets/images/case-studies/` | 4:3 | 1200×900px |
+| L'Oréal Paris Cannes 2025 | `loreal-paris-cannes.jpg` | `assets/images/case-studies/` | 4:3 | 1200×900px |
+| L'Oréal Paris Cannes 2025 | `loreal-paris-cannes.jpg` | `assets/images/projects/` | 16:10 | 800×500px |
+| Galleri5 × Myntra EORS | `galleri5-x-myntra-eors.jpg` | `assets/images/projects/` | 16:10 | 800×500px |
+| Zyngai.com | `zyngai.jpg` | `assets/images/projects/` | 16:10 | 800×500px |
+| RuSticks | `rusticks.jpg` | `assets/images/projects/` | 16:10 | 800×500px |
+| Anita Dongre | `anita-dongre.jpg` | `assets/images/projects/` | 16:10 | 800×500px |
+| Bearcare | `bearcare.jpg` | `assets/images/projects/` | 16:10 | 800×500px |
+| Park Avenue | `park-avenue.jpg` | `assets/images/projects/` | 16:10 | 800×500px |
+| OG image | `og-image.jpg` | `assets/favicon/` | 1200:630 | 1200×630px |
 
 Optimise all images before adding (target under 200KB each). Use squoosh.app or imageoptim.
 
@@ -154,10 +166,10 @@ Optimise all images before adding (target under 200KB each). Use squoosh.app or 
 
 ## TODOs before sharing with recruiters
 
-- [ ] Add hero portrait (`assets/images/hero/portrait.jpg`)
+- [x] Add hero portrait — `khushbu-kothari.jpg` is live
 - [ ] Add about photo (`assets/images/about/about-photo.jpg`)
-- [ ] Add 3 case study images
-- [ ] Add 6 project card images
+- [ ] Add 4 case study images (see table above)
+- [ ] Add 7 project card images (see table above)
 - [ ] Add resume PDF (`assets/pdf/resume-khushbu-kothari.pdf`) and update `href` in contact section
 - [ ] Replace `href="#"` placeholder links with real URLs
 - [ ] Add favicon (`assets/favicon/favicon.ico`)
