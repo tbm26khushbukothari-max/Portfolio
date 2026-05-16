@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushbu Kothari — Brand Strategist &amp; Product Marketing</title>
+<meta name="description" content="Khushbu Kothari · Brand strategist and product marketer. Six years across founder's offices, agencies, and a label of her own. AI-fluent, data-driven, shipping at scale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..500&display=swap" rel="stylesheet">
+<style>
+  /* =========================================
+     RESET & TOKENS
+     ========================================= */
+  :root {
+    --bg: #faf7f0;
+    --bg-alt: #f1ece1;
+    --bg-dark: #15110d;
+    --ink: #15110d;
+    --ink-2: #2d2620;
+    --muted: #6b6258;
+    --faint: #a89e90;
+    --line: #e3dccc;
+    --line-2: #d4cab9;
+    --accent: #c4522d;
+    --accent-dark: #9a3e21;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --r-sm: 4px;
+    --r-md: 8px;
+    --r-lg: 16px;
+    --r-xl: 24px;
+    --shadow-1: 0 1px 2px rgba(21,17,13,0.04), 0 2px 8px rgba(21,17,13,0.04);
+    --shadow-2: 0 8px 24px rgba(21,17,13,0.08), 0 2px 8px rgba(21,17,13,0.06);
+    --shadow-3: 0 24px 48px -16px rgba(21,17,13,0.18);
+    --page-pad: 2.5rem;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; }
+  ::selection { background: var(--accent); color: #fff; }
+
+  /* =========================================
+     LAYOUT
+     ========================================= */
+  .wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+  }
+  section { padding: 7rem 0; }
+  .section-tight { padding: 4.5rem 0; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--serif);
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-variation-settings: 'opsz' 144;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    font-variation-settings: 'opsz' 72;
+  }
+  .lede {
+    font-family: var(--serif);
+    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+    color: var(--muted);
+    line-height: 1.55;
+    max-width: 54ch;
+    font-variation-settings: 'opsz' 24;
+  }
+
+  /* =========================================
+     NAV
+     ========================================= */
+  nav.topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    background: rgba(250,247,240,0.88);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  nav.topbar.scrolled { border-color: var(--line); }
+  nav.topbar .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.1rem var(--page-pad);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  nav .logo {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--ink);
+    font-variation-settings: 'opsz' 24;
+    white-space: nowrap;
+  }
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  nav ul a {
+    font-size: 0.82rem;
+    color: var(--ink-2);
+    transition: color 0.2s;
+  }
+  nav ul a:hover { color: var(--accent); }
+  nav .cta {
+    font-size: 0.82rem;
+    padding: 0.55rem 1rem;
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 999px;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  nav .cta:hover { background: var(--accent); }
+
+  /* =========================================
+     HERO
+     ========================================= */
+  .hero {
+    padding-top: 8.5rem;
+    padding-bottom: 4.5rem;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-name {
+    font-size: clamp(2.8rem, 6.5vw, 5rem);
+    font-variation-settings: 'opsz' 144;
+    line-height: 0.98;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.03em;
+  }
+  .hero-role {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .hero-role .dot {
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 999px;
+    flex-shrink: 0;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.45; transform: scale(0.8); }
+  }
+  .hero-tag {
+    font-size: 1.05rem;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 46ch;
+    margin-bottom: 2rem;
+  }
+  .hero-tag strong { color: var(--ink); font-weight: 500; }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .stat .n {
+    font-family: var(--serif);
+    font-size: 1.85rem;
+    color: var(--ink);
+    line-height: 1;
+    font-variation-settings: 'opsz' 48;
+  }
+  .stat .l {
+    font-size: 0.74rem;
+    color: var(--muted);
+    margin-top: 0.35rem;
+    line-height: 1.35;
+  }
+  .stat + .stat {
+    padding-left: 1.25rem;
+    border-left: 1px solid var(--line);
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.8rem 1.35rem;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: all 0.22s ease;
+    white-space: nowrap;
+  }
+  .btn-primary { background: var(--ink); color: var(--bg); }
+  .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--line-2);
+  }
+  .btn-ghost:hover { border-color: var(--ink); }
+  .btn .arr { transition: transform 0.18s; }
+  .btn:hover .arr { transform: translateX(3px); }
+
+  /* Portrait placeholder */
+  .portrait {
+    aspect-ratio: 4 / 5;
+    border-radius: var(--r-lg);
+    background: linear-gradient(135deg, #d9c4a8 0%, #c4522d 100%);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 1.5rem;
+  }
+  .portrait::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 30% 20%, rgba(255,255,255,0.16) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(0,0,0,0.16) 0%, transparent 50%);
+  }
+  .portrait::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0.12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+    opacity: 0.35;
+  }
+  .portrait .ph-tag {
+    position: relative; z-index: 1;
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    color: rgba(255,255,255,0.85);
+    background: rgba(0,0,0,0.22);
+    backdrop-filter: blur(6px);
+    padding: 0.35rem 0.65rem;
+    border-radius: var(--r-sm);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* =========================================
+     BRANDS SECTION — animated marquee
+     ========================================= */
+  .brands-section {
+    background: var(--bg-dark);
+    padding: 5rem 0 5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .brands-section::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.75' numOctaves='4'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 1;
+  }
+  .brands-header {
+    max-width: 1200px;
+    margin: 0 auto 3.5rem;
+    padding: 0 var(--page-pad);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+  .brands-header .eyebrow {
+    color: rgba(250,247,240,0.45);
+  }
+  .brands-header .eyebrow::before { background: var(--accent); }
+  .brands-headline {
+    font-family: var(--serif);
+    font-size: clamp(1.65rem, 3.2vw, 2.6rem);
+    color: var(--bg);
+    font-variation-settings: 'opsz' 72;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-top: 0.25rem;
+  }
+  .brands-sub {
+    font-size: 0.88rem;
+    color: rgba(250,247,240,0.45);
+    max-width: 34ch;
+    line-height: 1.55;
+    padding-bottom: 0.25rem;
+  }
+
+  /* Scrolling track */
+  .marquee-track {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+    z-index: 1;
+    mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+  }
+  .marquee-track + .marquee-track { margin-top: 1rem; }
+  .marquee-track:hover .marquee-inner { animation-play-state: paused; }
+
+  .marquee-inner {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    animation: scroll-ltr 42s linear infinite;
+    will-change: transform;
+    flex-shrink: 0;
+  }
+  .marquee-track.rtl .marquee-inner {
+    animation: scroll-rtl 36s linear infinite;
+  }
+
+  @keyframes scroll-ltr {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @keyframes scroll-rtl {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+  }
+
+  /* Brand chip */
+  .brand-chip {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.7rem 1.15rem 0.7rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    transition:
+      transform   0.38s cubic-bezier(0.16,1,0.3,1),
+      background  0.28s,
+      border-color 0.28s,
+      box-shadow  0.38s;
+    cursor: default;
+    position: relative;
+    isolation: isolate;
+  }
+  .brand-chip::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: var(--bc, transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+  }
+  .brand-chip:hover {
+    transform: translateY(-5px) scale(1.04);
+    border-color: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.09);
+    box-shadow:
+      0 0 0 1px var(--bc, rgba(255,255,255,0.1)),
+      0 20px 48px rgba(0,0,0,0.45),
+      0 0 32px -8px var(--bc, transparent);
+  }
+  .brand-chip:hover::before { opacity: 0.1; }
+
+  /* Logo mark circle */
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bc, var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.38s cubic-bezier(0.16,1,0.3,1);
+  }
+  /* shine overlay */
+  .brand-mark::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 38% 32%, rgba(255,255,255,0.38) 0%, transparent 62%);
+  }
+  .brand-chip:hover .brand-mark {
+    transform: rotate(-10deg) scale(1.14);
+  }
+  .brand-mark-text {
+    font-family: var(--serif);
+    font-size: 0.82rem;
+    color: #fff;
+    font-variation-settings: 'opsz' 24;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    font-style: italic;
+  }
+
+  /* Chip text */
+  .brand-chip-body { display: flex; flex-direction: column; }
+  .brand-chip-name {
+    font-family: var(--serif);
+    font-size: 0.92rem;
+    color: rgba(250,247,240,0.9);
+    font-variation-settings: 'opsz' 24;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .brand-chip-cat {
+    font-family: var(--mono);
+    font-size: 0.56rem;
+    color: rgba(250,247,240,0.38);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 0.15rem;
+    white-space: nowrap;
+    transition: color 0.28s;
+  }
+  .brand-chip:hover .brand-chip-cat { color: var(--bc, var(--accent)); }
+
+  /* Metric pill (row 2) */
+  .metric-chip {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(196,82,45,0.28);
+    background: rgba(196,82,45,0.1);
+    transition: transform 0.32s, background 0.28s;
+    cursor: default;
+  }
+  .metric-chip:hover {
+    transform: translateY(-4px);
+    background: rgba(196,82,45,0.18);
+  }
+  .metric-chip .mc-val {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-variation-settings: 'opsz' 36;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .metric-chip .mc-label {
+    font-family: var(--mono);
+    font-size: 0.57rem;
+    color: rgba(250,247,240,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  /* Tools strip */
+  .tools-strip {
+    border-bottom: 1px solid var(--line);
+    padding: 0.9rem 0;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .tools-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem 1rem;
+  }
+  .tools-row .tools-label {
+    font-family: var(--mono);
+    font-size: 0.63rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--faint);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .tools-row .tool-tag {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--line);
+    border-radius: var(--r-sm);
+    white-space: nowrap;
+    transition: border-color 0.18s, color 0.18s;
+  }
+  .tools-row .tool-tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* =========================================
+     FEATURED CASE STUDIES
+     ========================================= */
+  .casework .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 4.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .case {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 7rem;
+  }
+  .case:last-child { margin-bottom: 0; }
+  .case.flipped { grid-template-columns: 1fr 1.1fr; }
+  .case.flipped .case-text { order: 2; }
+  .case.flipped .case-media { order: 1; }
+
+  .case-media {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--r-lg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
+    flex-shrink: 0;
+  }
+  .case:hover .case-media { transform: translateY(-4px); }
+  .case-media .ph-inner {
+    position: absolute; inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.75rem;
+  }
+  .case-media .ph-grain {
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+    opacity: 0.45;
+  }
+  .case-media .ph-top {
+    display: flex; justify-content: space-between;
+    font-family: var(--mono); font-size: 0.66rem;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase; letter-spacing: 0.15em;
+    position: relative; z-index: 1;
+  }
+  .case-media .ph-name {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+    color: rgba(255,255,255,0.95);
+    line-height: 1.1;
+    position: relative; z-index: 1;
+    font-variation-settings: 'opsz' 72;
+  }
+  .case-media .ph-hint {
+    font-family: var(--mono); font-size: 0.62rem;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase; letter-spacing: 0.15em;
+    position: relative; z-index: 1;
+    margin-top: 0.4rem;
+  }
+
+  .theme-rust   { background: linear-gradient(135deg, #d97f4a 0%, #8a2e10 100%); }
+  .theme-olive  { background: linear-gradient(135deg, #7a8763 0%, #3a4530 100%); }
+  .theme-plum   { background: linear-gradient(135deg, #7e4661 0%, #3a1f33 100%); }
+  .theme-navy   { background: linear-gradient(135deg, #4a5a78 0%, #1a2238 100%); }
+  .theme-sand   { background: linear-gradient(135deg, #c9a878 0%, #6e4f2a 100%); }
+  .theme-forest { background: linear-gradient(135deg, #4a6b58 0%, #1f3025 100%); }
+  .theme-ink    { background: linear-gradient(135deg, #4a4540 0%, #15110d 100%); }
+  .theme-clay   { background: linear-gradient(135deg, #b88560 0%, #5e3a22 100%); }
+
+  .case-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1.1rem;
+  }
+  .meta-pill {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    padding: 0.3rem 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    background: var(--bg-alt);
+    border-radius: 999px;
+  }
+  .meta-pill.accent { background: var(--accent); color: #fff; }
+
+  .case-title {
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+    font-variation-settings: 'opsz' 72;
+    margin-bottom: 1.1rem;
+    line-height: 1.12;
+  }
+  .case-brief {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 1.75rem;
+  }
+  .case-brief strong { color: var(--ink); font-weight: 500; }
+
+  .case-pap {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+  }
+  .pap-row {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--line-2);
+  }
+  .pap-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .pap-label {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding-top: 0.2rem;
+  }
+  .pap-text { color: var(--ink-2); font-size: 0.93rem; line-height: 1.55; }
+
+  .case-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 1.1rem 0;
+    margin-bottom: 1.5rem;
+  }
+  .metric .v {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--accent);
+    font-variation-settings: 'opsz' 36;
+    line-height: 1.1;
+  }
+  .metric .k {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+    line-height: 1.3;
+  }
+  .metric + .metric {
+    padding-left: 1rem;
+    border-left: 1px solid var(--line);
+  }
+
+  .case-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .link-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    color: var(--ink);
+    background: var(--bg-alt);
+    border: 1px solid transparent;
+    transition: all 0.18s;
+  }
+  .link-pill:hover { background: var(--ink); color: var(--bg); }
+  .link-pill .arr { font-size: 0.72rem; transition: transform 0.18s; }
+  .link-pill:hover .arr { transform: translateX(2px); }
+
+  /* =========================================
+     PROJECT GRID
+     ========================================= */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+  }
+  .gcard {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    transition: transform 0.28s, box-shadow 0.28s;
+    display: flex;
+    flex-direction: column;
+  }
+  .gcard:hover { transform: translateY(-3px); box-shadow: var(--shadow-2); }
+  .gcard .gmedia {
+    aspect-ratio: 16 / 10;
+    position: relative;
+    overflow: hidden;
+  }
+  .gcard .gmedia .ph-inner {
+    position: absolute; inset: 0;
+    padding: 1.1rem;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+  }
+  .gcard .gmedia .ph-grain {
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+    opacity: 0.38;
+  }
+  .gcard .gmedia .ph-top {
+    font-family: var(--mono); font-size: 0.62rem;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase; letter-spacing: 0.12em;
+    position: relative; z-index: 1;
+  }
+  .gcard .gmedia .ph-name {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    color: rgba(255,255,255,0.95);
+    line-height: 1.1;
+    position: relative; z-index: 1;
+    font-variation-settings: 'opsz' 36;
+  }
+  .gcard .gbody {
+    padding: 1.35rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .gcard .gtag {
+    font-family: var(--mono); font-size: 0.62rem;
+    color: var(--accent); text-transform: uppercase;
+    letter-spacing: 0.14em; margin-bottom: 0.5rem;
+  }
+  .gcard h4 {
+    font-size: 1.1rem;
+    font-variation-settings: 'opsz' 24;
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+  }
+  .gcard .gdesc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.55;
+    flex: 1;
+    margin-bottom: 0.9rem;
+  }
+  .gcard .glink {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: color 0.18s, gap 0.18s;
+  }
+  .gcard .glink:hover { color: var(--accent); gap: 0.55rem; }
+
+  /* =========================================
+     ABOUT
+     ========================================= */
+  .about {
+    background: var(--bg-alt);
+    margin: 0 calc(50% - 50vw);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 4.5rem;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+  }
+  .about-photo {
+    aspect-ratio: 4 / 5;
+    border-radius: var(--r-lg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+  }
+  .about-body p {
+    font-size: 1rem;
+    color: var(--ink-2);
+    line-height: 1.7;
+    margin-bottom: 1.1rem;
+  }
+  .about-body p:last-child { margin-bottom: 0; }
+  .about-body strong { color: var(--ink); font-weight: 500; }
+
+  .principles {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .principle {
+    background: var(--bg);
+    border-radius: var(--r-md);
+    padding: 1.35rem;
+    border: 1px solid var(--line);
+  }
+  .principle .pn {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    color: var(--accent);
+    margin-bottom: 0.45rem;
+    letter-spacing: 0.15em;
+  }
+  .principle h5 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    margin-bottom: 0.45rem;
+    font-variation-settings: 'opsz' 24;
+  }
+  .principle p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* =========================================
+     EXPERIENCE TIMELINE
+     ========================================= */
+  .timeline {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--line);
+  }
+  .role {
+    display: grid;
+    grid-template-columns: 130px 1.1fr 1.5fr;
+    gap: 2rem;
+    padding: 2.25rem 0;
+    border-bottom: 1px solid var(--line);
+    transition: background 0.25s;
+  }
+  .role:hover { background: rgba(196,82,45,0.025); }
+  .role-year {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    padding-top: 0.2rem;
+  }
+  .role-year strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    color: var(--ink);
+    font-variation-settings: 'opsz' 36;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+  }
+  .role-head h4 {
+    font-size: 1.3rem;
+    font-variation-settings: 'opsz' 36;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+  }
+  .role-head .rt {
+    font-size: 0.82rem;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+  }
+  .role-head .rl {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .role-body ul { list-style: none; }
+  .role-body li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.55rem;
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+  .role-body li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.58rem;
+    width: 5px; height: 1px;
+    background: var(--accent);
+  }
+  .role-body li strong { color: var(--accent); font-weight: 500; }
+
+  /* =========================================
+     CAPABILITIES
+     ========================================= */
+  .caps {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .cap-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 1.75rem;
+  }
+  .cap-card.full-width { grid-column: 1 / -1; }
+  .cap-card h4 {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin-bottom: 1.1rem;
+    font-weight: 500;
+  }
+  .cap-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+  .cap-list span {
+    font-size: 0.82rem;
+    padding: 0.4rem 0.8rem;
+    background: var(--bg-alt);
+    border-radius: 999px;
+    color: var(--ink-2);
+  }
+  .cap-list span.highlight {
+    background: rgba(196,82,45,0.08);
+    color: var(--accent);
+    border: 1px solid rgba(196,82,45,0.18);
+  }
+
+  /* =========================================
+     RECOGNITION
+     ========================================= */
+  .awards-grid {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .award {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--r-lg);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.1rem;
+    align-items: start;
+  }
+  .award .badge {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .award.gold   .badge { background: #b88c3d; }
+  .award.silver .badge { background: #94908a; }
+  .award.bronze .badge { background: #a06a3c; }
+  .award h5 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+    font-variation-settings: 'opsz' 24;
+    line-height: 1.25;
+  }
+  .award p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* =========================================
+     CONTACT / FOOTER
+     ========================================= */
+  .contact {
+    background: var(--bg-dark);
+    color: var(--bg);
+    margin: 0 calc(50% - 50vw);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+  }
+  .contact .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--page-pad);
+  }
+  .contact .eyebrow { color: rgba(250,247,240,0.5); }
+  .contact .eyebrow::before { background: var(--accent); }
+  .contact h2 {
+    color: var(--bg);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    margin-bottom: 1.25rem;
+    max-width: 18ch;
+  }
+  .contact .lede { color: rgba(250,247,240,0.65); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    margin-top: 3.5rem;
+  }
+  .contact-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid rgba(250,247,240,0.1);
+    color: var(--bg);
+    transition: padding 0.28s, color 0.28s;
+    gap: 1rem;
+  }
+  .contact-links a:hover { padding-left: 0.65rem; color: var(--accent); }
+  .contact-links .ltl {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(250,247,240,0.45);
+    margin-bottom: 0.25rem;
+  }
+  .contact-links a:hover .ltl { color: var(--accent); }
+  .contact-links .lval {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-variation-settings: 'opsz' 36;
+    word-break: break-word;
+  }
+  .contact-links .arr {
+    font-size: 1rem;
+    transition: transform 0.28s;
+    flex-shrink: 0;
+  }
+  .contact-links a:hover .arr { transform: translateX(5px); }
+
+  .signoff {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: rgba(250,247,240,0.7);
+    line-height: 1.6;
+    max-width: 28ch;
+    font-variation-settings: 'opsz' 24;
+  }
+  .signoff::before {
+    content: '';
+    display: block;
+    width: 1.75rem; height: 1px;
+    background: var(--accent);
+    margin-bottom: 1.1rem;
+  }
+
+  .foot-meta {
+    margin-top: 4.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(250,247,240,0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(250,247,240,0.35);
+  }
+
+  /* =========================================
+     REVEAL
+     ========================================= */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.85s cubic-bezier(0.16,1,0.3,1),
+                transform 0.85s cubic-bezier(0.16,1,0.3,1);
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* =========================================
+     RESPONSIVE
+     ========================================= */
+  @media (max-width: 1024px) {
+    :root { --page-pad: 2rem; }
+    .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .stat + .stat:nth-child(3) {
+      padding-left: 0; border-left: none;
+      padding-top: 1rem; border-top: 1px solid var(--line);
+    }
+    .stat + .stat:nth-child(4) {
+      padding-top: 1rem; border-top: 1px solid var(--line);
+    }
+    .case, .case.flipped {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    .case.flipped .case-text { order: 2; }
+    .case.flipped .case-media { order: 1; }
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-photo { max-width: 320px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .role { grid-template-columns: 100px 1fr; }
+    .role-body { grid-column: 1 / -1; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .principles { grid-template-columns: 1fr; }
+    .awards-grid { grid-template-columns: 1fr; }
+    .caps { grid-template-columns: 1fr; }
+    .cap-card.full-width { grid-column: auto; }
+    section { padding: 4.5rem 0; }
+    .section-tight { padding: 3rem 0; }
+    nav ul { display: none; }
+  }
+  @media (max-width: 640px) {
+    :root { --page-pad: 1.25rem; }
+    nav.topbar .inner { padding: 0.9rem var(--page-pad); }
+    .hero { min-height: auto; padding-top: 6.5rem; }
+    .hero-stats { grid-template-columns: 1fr; }
+    .stat + .stat {
+      padding-left: 0; padding-top: 0.85rem;
+      border-left: none; border-top: 1px solid var(--line);
+    }
+    .case-metrics { grid-template-columns: 1fr; }
+    .metric + .metric {
+      padding-left: 0; padding-top: 0.65rem;
+      border-left: none; border-top: 1px solid var(--line);
+    }
+    .grid { grid-template-columns: 1fr; }
+    .pap-row { grid-template-columns: 1fr; gap: 0.3rem; }
+    .role { grid-template-columns: 1fr; gap: 0.85rem; padding: 1.75rem 0; }
+    section { padding: 3.5rem 0; }
+    .section-tight { padding: 2.5rem 0; }
+    .hero-cta { flex-direction: column; align-items: flex-start; }
+    .tools-row .tool-tag:nth-child(n+9) { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="topbar" id="nav">
+  <div class="inner">
+    <a href="#top" class="logo">Khushbu Kothari</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+    <a href="#contact" class="cta">Get in touch</a>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div class="reveal">
+      <div class="hero-role">
+        <span class="dot"></span>Brand Strategy · Product Marketing · AI and Data
+      </div>
+      <h1 class="hero-name">Khushbu<br>Kothari.</h1>
+      <p class="hero-tag">
+        I turn cultural insight into brand outcomes and bring the data to show what worked.
+        <strong>Six years</strong> across founder's offices, agencies, and a D2C label of my own.
+        Now adding AI tooling, product thinking, and analytics at <strong>Masters' Union</strong>,
+        targeting roles at global-scale technology companies.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="n">Rs 6 Cr+</div>
+          <div class="l">in accounts owned end-to-end</div>
+        </div>
+        <div class="stat">
+          <div class="n">$5M</div>
+          <div class="l">seed round enabled from founder's office</div>
+        </div>
+        <div class="stat">
+          <div class="n">3x</div>
+          <div class="l">national and global creative awards</div>
+        </div>
+        <div class="stat">
+          <div class="n">12+</div>
+          <div class="l">AI and analytics tools in active use</div>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View selected work <span class="arr">→</span></a>
+        <a href="#capabilities" class="btn btn-ghost">Capabilities <span class="arr">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- Replace .portrait with: <img src="assets/portrait.jpg" alt="Khushbu Kothari" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--shadow-3);"> -->
+    <div class="portrait reveal" aria-label="Portrait placeholder">
+      <div class="ph-tag">Add headshot · 4:5 ratio</div>
+    </div>
+  </div>
+</header>
+
+
+<!-- BRANDS -->
+<section class="brands-section">
+
+  <!-- Header -->
+  <div class="brands-header reveal">
+    <div>
+      <div class="eyebrow">Client roster</div>
+      <div class="brands-headline">Work shipped for India's biggest brands.</div>
+    </div>
+    <p class="brands-sub">Nine brands. Rs 6 Cr+ in accounts. Beauty, fashion, culture, and wellness.</p>
+  </div>
+
+  <!-- Row 1: left to right — all 9 brands, duplicated for seamless loop -->
+  <div class="marquee-track">
+    <div class="marquee-inner">
+
+      <!-- set A -->
+      <div class="brand-chip" style="--bc:#E91E8C">
+        <div class="brand-mark"><span class="brand-mark-text">N</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Nykaa</span>
+          <span class="brand-chip-cat">Beauty · Retail</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#2E7D32">
+        <div class="brand-mark"><span class="brand-mark-text">D</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Dabur</span>
+          <span class="brand-chip-cat">FMCG · Heritage</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#C41E3A">
+        <div class="brand-mark"><span class="brand-mark-text">C</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Colgate</span>
+          <span class="brand-chip-cat">Personal Care</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#FF3F6C">
+        <div class="brand-mark"><span class="brand-mark-text">M</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Myntra</span>
+          <span class="brand-chip-cat">Fashion · E-commerce</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#333333">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.62rem;font-style:normal;letter-spacing:-0.03em">H&amp;M</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">H&amp;M</span>
+          <span class="brand-chip-cat">Global Fashion</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#5C0ECC">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">CF</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Cultfit</span>
+          <span class="brand-chip-cat">Health · Wellness</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#9C7C2E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">AD</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Anita Dongre</span>
+          <span class="brand-chip-cat">Luxury Fashion</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#1A3A6E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">PA</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Park Avenue</span>
+          <span class="brand-chip-cat">Premium Menswear</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#8B4513">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">LH</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Live History India</span>
+          <span class="brand-chip-cat">Cultural Platform</span>
+        </div>
+      </div>
+
+      <!-- set B (duplicate for infinite loop) -->
+      <div class="brand-chip" style="--bc:#E91E8C">
+        <div class="brand-mark"><span class="brand-mark-text">N</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Nykaa</span>
+          <span class="brand-chip-cat">Beauty · Retail</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#2E7D32">
+        <div class="brand-mark"><span class="brand-mark-text">D</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Dabur</span>
+          <span class="brand-chip-cat">FMCG · Heritage</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#C41E3A">
+        <div class="brand-mark"><span class="brand-mark-text">C</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Colgate</span>
+          <span class="brand-chip-cat">Personal Care</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#FF3F6C">
+        <div class="brand-mark"><span class="brand-mark-text">M</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Myntra</span>
+          <span class="brand-chip-cat">Fashion · E-commerce</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#333333">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.62rem;font-style:normal;letter-spacing:-0.03em">H&amp;M</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">H&amp;M</span>
+          <span class="brand-chip-cat">Global Fashion</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#5C0ECC">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">CF</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Cultfit</span>
+          <span class="brand-chip-cat">Health · Wellness</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#9C7C2E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">AD</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Anita Dongre</span>
+          <span class="brand-chip-cat">Luxury Fashion</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#1A3A6E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">PA</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Park Avenue</span>
+          <span class="brand-chip-cat">Premium Menswear</span>
+        </div>
+      </div>
+      <div class="brand-chip" style="--bc:#8B4513">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">LH</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Live History India</span>
+          <span class="brand-chip-cat">Cultural Platform</span>
+        </div>
+      </div>
+
+    </div><!-- /marquee-inner -->
+  </div><!-- /marquee-track -->
+
+  <!-- Row 2: right to left — brands mixed with metric highlights -->
+  <div class="marquee-track rtl">
+    <div class="marquee-inner">
+
+      <!-- set A -->
+      <div class="metric-chip">
+        <span class="mc-val">Rs 6 Cr+</span>
+        <span class="mc-label">accounts<br>managed</span>
+      </div>
+      <div class="brand-chip" style="--bc:#FF3F6C">
+        <div class="brand-mark"><span class="brand-mark-text">M</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Myntra</span>
+          <span class="brand-chip-cat">Fashion · E-commerce</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">Global Gold</span>
+        <span class="mc-label">award<br>Galleri5</span>
+      </div>
+      <div class="brand-chip" style="--bc:#2E7D32">
+        <div class="brand-mark"><span class="brand-mark-text">D</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Dabur</span>
+          <span class="brand-chip-cat">FMCG · Heritage</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">$5M</span>
+        <span class="mc-label">seed round<br>enabled</span>
+      </div>
+      <div class="brand-chip" style="--bc:#9C7C2E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">AD</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Anita Dongre</span>
+          <span class="brand-chip-cat">Luxury Fashion</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">50K+</span>
+        <span class="mc-label">campaign<br>activations</span>
+      </div>
+      <div class="brand-chip" style="--bc:#E91E8C">
+        <div class="brand-mark"><span class="brand-mark-text">N</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Nykaa</span>
+          <span class="brand-chip-cat">Beauty · Retail</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">3x</span>
+        <span class="mc-label">national<br>awards</span>
+      </div>
+      <div class="brand-chip" style="--bc:#5C0ECC">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">CF</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Cultfit</span>
+          <span class="brand-chip-cat">Health · Wellness</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">20K+</span>
+        <span class="mc-label">monthly visitors<br>in 90 days</span>
+      </div>
+      <div class="brand-chip" style="--bc:#1A3A6E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">PA</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Park Avenue</span>
+          <span class="brand-chip-cat">Premium Menswear</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">100+</span>
+        <span class="mc-label">campaigns<br>executed</span>
+      </div>
+      <div class="brand-chip" style="--bc:#C41E3A">
+        <div class="brand-mark"><span class="brand-mark-text">C</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Colgate</span>
+          <span class="brand-chip-cat">Personal Care</span>
+        </div>
+      </div>
+
+      <!-- set B (duplicate) -->
+      <div class="metric-chip">
+        <span class="mc-val">Rs 6 Cr+</span>
+        <span class="mc-label">accounts<br>managed</span>
+      </div>
+      <div class="brand-chip" style="--bc:#FF3F6C">
+        <div class="brand-mark"><span class="brand-mark-text">M</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Myntra</span>
+          <span class="brand-chip-cat">Fashion · E-commerce</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">Global Gold</span>
+        <span class="mc-label">award<br>Galleri5</span>
+      </div>
+      <div class="brand-chip" style="--bc:#2E7D32">
+        <div class="brand-mark"><span class="brand-mark-text">D</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Dabur</span>
+          <span class="brand-chip-cat">FMCG · Heritage</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">$5M</span>
+        <span class="mc-label">seed round<br>enabled</span>
+      </div>
+      <div class="brand-chip" style="--bc:#9C7C2E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">AD</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Anita Dongre</span>
+          <span class="brand-chip-cat">Luxury Fashion</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">50K+</span>
+        <span class="mc-label">campaign<br>activations</span>
+      </div>
+      <div class="brand-chip" style="--bc:#E91E8C">
+        <div class="brand-mark"><span class="brand-mark-text">N</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Nykaa</span>
+          <span class="brand-chip-cat">Beauty · Retail</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">3x</span>
+        <span class="mc-label">national<br>awards</span>
+      </div>
+      <div class="brand-chip" style="--bc:#5C0ECC">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">CF</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Cultfit</span>
+          <span class="brand-chip-cat">Health · Wellness</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">20K+</span>
+        <span class="mc-label">monthly visitors<br>in 90 days</span>
+      </div>
+      <div class="brand-chip" style="--bc:#1A3A6E">
+        <div class="brand-mark"><span class="brand-mark-text" style="font-size:0.68rem;font-style:normal">PA</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Park Avenue</span>
+          <span class="brand-chip-cat">Premium Menswear</span>
+        </div>
+      </div>
+      <div class="metric-chip">
+        <span class="mc-val">100+</span>
+        <span class="mc-label">campaigns<br>executed</span>
+      </div>
+      <div class="brand-chip" style="--bc:#C41E3A">
+        <div class="brand-mark"><span class="brand-mark-text">C</span></div>
+        <div class="brand-chip-body">
+          <span class="brand-chip-name">Colgate</span>
+          <span class="brand-chip-cat">Personal Care</span>
+        </div>
+      </div>
+
+    </div><!-- /marquee-inner -->
+  </div><!-- /marquee-track rtl -->
+
+</section><!-- /brands-section -->
+
+<!-- TOOLS STRIP -->
+<div class="tools-strip">
+  <div class="wrap">
+    <div class="tools-row">
+      <span class="tools-label">Tools I build with</span>
+      <span class="tool-tag">Google AI Studio</span>
+      <span class="tool-tag">Claude Code</span>
+      <span class="tool-tag">Whisper Flow</span>
+      <span class="tool-tag">Stitch</span>
+      <span class="tool-tag">KNIME</span>
+      <span class="tool-tag">Tableau</span>
+      <span class="tool-tag">Power BI</span>
+      <span class="tool-tag">n8n</span>
+      <span class="tool-tag">Midjourney</span>
+      <span class="tool-tag">Figma</span>
+      <span class="tool-tag">Framer</span>
+      <span class="tool-tag">Meta Ads Manager</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- FEATURED WORK -->
+<section class="casework wrap" id="work">
+  <div class="heading reveal">
+    <div>
+      <div class="eyebrow">Selected Work · 01–03</div>
+      <h2>Case studies.</h2>
+    </div>
+    <p class="lede">Three campaigns chosen for the breadth of skill required: brand insight, cross-functional delivery, and outcomes that compound.</p>
+  </div>
+
+  <!-- CASE 01 -->
+  <article class="case reveal">
+    <div class="case-text">
+      <div class="case-meta-row">
+        <span class="meta-pill accent">National Award · Silver E4M</span>
+        <span class="meta-pill">Brand Campaign</span>
+        <span class="meta-pill">2024</span>
+      </div>
+      <h3 class="case-title">Making a heritage herbal toothpaste irresistible to Gen Z</h3>
+      <p class="case-brief">As <strong>Content and Strategy Lead at Tonic Worldwide</strong>, I led the cross-functional team that conceived and shipped the <strong>Dabur Herb'l x Star Wars</strong> campaign, turning a legacy oral-care brand into a pop-culture moment.</p>
+
+      <div class="case-pap">
+        <div class="pap-row">
+          <div class="pap-label">Problem</div>
+          <div class="pap-text">A heritage herbal toothpaste with declining relevance among 18 to 28 urban consumers who did not see Ayurvedic as a desirable identity signal.</div>
+        </div>
+        <div class="pap-row">
+          <div class="pap-label">Approach</div>
+          <div class="pap-text">Bridged the brand's herbal identity with the Star Wars IP through a story-first content system anchored on the "force of nature" insight, deployed across digital, social, and creator partnerships. Used AI-assisted content tooling to accelerate ideation and visual production.</div>
+        </div>
+        <div class="pap-row">
+          <div class="pap-label">Impact</div>
+          <div class="pap-text">Two national awards, a measurable lift in brand consideration with the 18 to 28 cohort, and a replicable playbook the agency now uses for heritage-brand reinventions.</div>
+        </div>
+      </div>
+
+      <div class="case-metrics">
+        <div class="metric"><div class="v">Silver</div><div class="k">Exchange4Media Awards</div></div>
+        <div class="metric"><div class="v">Bronze</div><div class="k">ET Digiplus Awards</div></div>
+        <div class="metric"><div class="v">10+</div><div class="k">marquee brands managed concurrently</div></div>
+      </div>
+
+      <div class="case-links">
+        <a href="#" class="link-pill">Read full case study <span class="arr">→</span></a>
+        <a href="#" class="link-pill">Campaign press <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <!-- Replace with: <img src="assets/dabur-starwars.jpg" alt="Dabur x Star Wars campaign" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> inside .case-media, then remove the theme class. -->
+    <div class="case-media theme-rust">
+      <div class="ph-grain"></div>
+      <div class="ph-inner">
+        <div class="ph-top"><span>Image 01</span><span>4:3</span></div>
+        <div>
+          <div class="ph-name">Dabur Herb'l<br>x Star Wars</div>
+          <div class="ph-hint">Replace with campaign image</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- CASE 02 -->
+  <article class="case flipped reveal">
+    <div class="case-text">
+      <div class="case-meta-row">
+        <span class="meta-pill accent">Founder's Office</span>
+        <span class="meta-pill">Strategy and GTM</span>
+        <span class="meta-pill">2022–2024</span>
+      </div>
+      <h3 class="case-title">Helping a cultural platform raise $5M and find its first audience</h3>
+      <p class="case-brief">At <strong>Peepul Tree Ventures (Live History India)</strong>, I worked directly with the founders to ship the MVP, build the early-growth engine, and construct the data-backed narrative that anchored the seed round.</p>
+
+      <div class="case-pap">
+        <div class="pap-row">
+          <div class="pap-label">Problem</div>
+          <div class="pap-text">A new platform combining cultural storytelling and commerce needed product traction, audience signals, and a fundable narrative — all simultaneously, with zero brand equity to start.</div>
+        </div>
+        <div class="pap-row">
+          <div class="pap-label">Approach</div>
+          <div class="pap-text">Spearheaded the MVP launch across Shopify, Etsy, and Amazon; executed a content-led GTM; seeded a 500+ creator micro-community on WhatsApp and Facebook; tracked cohort retention and GMV weekly to sharpen the investor deck.</div>
+        </div>
+        <div class="pap-row">
+          <div class="pap-label">Impact</div>
+          <div class="pap-text">20K+ monthly visitors within three months, 2x artisan product sales, and an early-traction data story that helped close a $5M seed round.</div>
+        </div>
+      </div>
+
+      <div class="case-metrics">
+        <div class="metric"><div class="v">$5M</div><div class="k">seed round enabled</div></div>
+        <div class="metric"><div class="v">20K+</div><div class="k">monthly visitors in 3 months</div></div>
+        <div class="metric"><div class="v">500+</div><div class="k">creator community from zero</div></div>
+      </div>
+
+      <div class="case-links">
+        <a href="#" class="link-pill">Read full case study <span class="arr">→</span></a>
+        <a href="https://livehistoryindia.com" target="_blank" rel="noopener" class="link-pill">Visit Live History India <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <!-- Replace with: <img src="assets/livehistory.jpg" alt="Live History India" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> inside .case-media, then remove the theme class. -->
+    <div class="case-media theme-plum">
+      <div class="ph-grain"></div>
+      <div class="ph-inner">
+        <div class="ph-top"><span>Image 02</span><span>4:3</span></div>
+        <div>
+          <div class="ph-name">Live History<br>India</div>
+          <div class="ph-hint">Replace with platform screenshot</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- CASE 03 -->
+  <article class="case reveal">
+    <div class="case-text">
+      <div class="case-meta-row">
+        <span class="meta-pill accent">Founder · 0 to 1</span>
+        <span class="meta-pill">D2C · Sustainability</span>
+        <span class="meta-pill">2019–2020</span>
+      </div>
+      <h3 class="case-title">Founding a sustainable label that put 1,000+ women back in their own wardrobes</h3>
+      <p class="case-brief">I built <strong>ROOS India</strong>, an upcycled fashion label, straight out of my undergrad, growing it into a pan-India D2C operation showcased at Khar Gymkhana and organically onboarded to Etsy at zero CAC.</p>
+
+      <div class="case-pap">
+        <div class="pap-row">
+          <div class="pap-label">Problem</div>
+          <div class="pap-text">India produces enormous quantities of textile waste. Consumers want sustainable options but not the aesthetic compromise that typically comes with upcycled goods.</div>
+        </div>
+        <div class="pap-row">
+          <div class="pap-label">Approach</div>
+          <div class="pap-text">Built a D2C operation around desirability-first upcycling: sourcing unused garments from customers, reworking them into contemporary silhouettes, and building the brand story around reclaiming identity rather than reducing waste.</div>
+        </div>
+        <div class="pap-row">
+          <div class="pap-label">Impact</div>
+          <div class="pap-text">Rs 5L+ revenue from a standing start, 500+ garments sold pan-India, and a community of 1,000+ women repurposing what was once forgotten.</div>
+        </div>
+      </div>
+
+      <div class="case-metrics">
+        <div class="metric"><div class="v">Rs 5L+</div><div class="k">revenue · pan-India D2C</div></div>
+        <div class="metric"><div class="v">500+</div><div class="k">upcycled garments sold</div></div>
+        <div class="metric"><div class="v">1,000+</div><div class="k">women in the repurpose community</div></div>
+      </div>
+
+      <div class="case-links">
+        <a href="#" class="link-pill">Read full case study <span class="arr">→</span></a>
+        <a href="#" class="link-pill">ROOS on Etsy <span class="arr">↗</span></a>
+        <a href="#" class="link-pill">Press features <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <!-- Replace with: <img src="assets/roos.jpg" alt="ROOS India lookbook" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"> inside .case-media, then remove the theme class. -->
+    <div class="case-media theme-olive">
+      <div class="ph-grain"></div>
+      <div class="ph-inner">
+        <div class="ph-top"><span>Image 03</span><span>4:3</span></div>
+        <div>
+          <div class="ph-name">ROOS<br>India</div>
+          <div class="ph-hint">Replace with lookbook image</div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+
+<!-- MORE WORK -->
+<section class="wrap section-tight">
+  <div class="reveal">
+    <div class="eyebrow">More Work · 04–09</div>
+    <h2>Selected projects.</h2>
+    <p class="lede">From award-winning agency campaigns to live MBA ventures and an AI-powered image platform sold to Myntra.</p>
+  </div>
+
+  <div class="grid">
+    <article class="gcard reveal">
+      <div class="gmedia theme-navy">
+        <div class="ph-grain"></div>
+        <div class="ph-inner">
+          <div class="ph-top">Image 04</div>
+          <div class="ph-name">Galleri5<br>x Myntra EORS</div>
+        </div>
+      </div>
+      <div class="gbody">
+        <div class="gtag">Campaign · Global Gold Award</div>
+        <h4>50,000+ activations during the End of Reason Sale</h4>
+        <p class="gdesc">Led the activation engine powering Myntra's flagship sale, running 100+ campaigns for 20+ lifestyle brands including H&amp;M and Cultfit. Won Global Gold for scale and execution quality.</p>
+        <a href="#" class="glink">View work <span class="arr">→</span></a>
+      </div>
+    </article>
+
+    <article class="gcard reveal">
+      <div class="gmedia theme-ink">
+        <div class="ph-grain"></div>
+        <div class="ph-inner">
+          <div class="ph-top">Image 05</div>
+          <div class="ph-name">Zyngai.com</div>
+        </div>
+      </div>
+      <div class="gbody">
+        <div class="gtag">AI Product · D2C to B2B Pivot</div>
+        <h4>AI image API generating 16,000+ assets per day, sold to Myntra</h4>
+        <p class="gdesc">Built the D2C GTM and user segmentation model for an AI image-generation tool. Identified the B2B API opportunity, pivoted strategy, and the platform was acquired by Myntra.</p>
+        <a href="#" class="glink">View work <span class="arr">→</span></a>
+      </div>
+    </article>
+
+    <article class="gcard reveal">
+      <div class="gmedia theme-clay">
+        <div class="ph-grain"></div>
+        <div class="ph-inner">
+          <div class="ph-top">Image 06</div>
+          <div class="ph-name">RuSticks</div>
+        </div>
+      </div>
+      <div class="gbody">
+        <div class="gtag">Live Venture · Rs 50K Grant Winner</div>
+        <h4>B2B tableware brand now stocked across 20+ outlets pan-India</h4>
+        <p class="gdesc">One of 10 teams selected from 120 to win the Masters' Union seed grant. Built end-to-end: positioning, pricing architecture, and retail distribution.</p>
+        <a href="#" class="glink">View work <span class="arr">→</span></a>
+      </div>
+    </article>
+
+    <article class="gcard reveal">
+      <div class="gmedia theme-sand">
+        <div class="ph-grain"></div>
+        <div class="ph-inner">
+          <div class="ph-top">Image 07</div>
+          <div class="ph-name">Anita Dongre</div>
+        </div>
+      </div>
+      <div class="gbody">
+        <div class="gtag">Luxury Positioning · Sustainability</div>
+        <h4>Sustainability as the new language of luxury</h4>
+        <p class="gdesc">Built the messaging framework aligning a sustainability narrative with the brand's luxury positioning, applied across digital, retail, and editorial channels.</p>
+        <a href="#" class="glink">View work <span class="arr">→</span></a>
+      </div>
+    </article>
+
+    <article class="gcard reveal">
+      <div class="gmedia theme-forest">
+        <div class="ph-grain"></div>
+        <div class="ph-inner">
+          <div class="ph-top">Image 08</div>
+          <div class="ph-name">Bearcare</div>
+        </div>
+      </div>
+      <div class="gbody">
+        <div class="gtag">Brand Identity · 0 to 1</div>
+        <h4>From blank page to a 90-day GTM roadmap</h4>
+        <p class="gdesc">Defined brand identity pillars and delivered the full go-to-market plan covering influencer seeding, community activation, and channel prioritisation.</p>
+        <a href="#" class="glink">View work <span class="arr">→</span></a>
+      </div>
+    </article>
+
+    <article class="gcard reveal">
+      <div class="gmedia theme-navy">
+        <div class="ph-grain"></div>
+        <div class="ph-inner">
+          <div class="ph-top">Image 09</div>
+          <div class="ph-name">Park Avenue</div>
+        </div>
+      </div>
+      <div class="gbody">
+        <div class="gtag">Marketing Strategy · Menswear</div>
+        <h4>4Ps for a new menswear line</h4>
+        <p class="gdesc">SKU architecture, price positioning, and channel mix for a new product line, including category analysis and competitive benchmarking using Tableau.</p>
+        <a href="#" class="glink">View work <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+
+    <!-- Replace .about-photo block with: <img src="assets/about-photo.jpg" alt="Khushbu at work" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--shadow-2);"> -->
+    <div class="about-photo theme-clay reveal">
+      <div class="ph-grain"></div>
+      <div class="ph-inner" style="position:absolute;inset:0;padding:1.5rem;display:flex;flex-direction:column;justify-content:flex-end;">
+        <span style="font-family:var(--mono);font-size:0.62rem;color:rgba(255,255,255,0.8);background:rgba(0,0,0,0.22);backdrop-filter:blur(6px);padding:0.32rem 0.6rem;border-radius:var(--r-sm);letter-spacing:0.1em;text-transform:uppercase;align-self:flex-start;">Add working photo · 4:5</span>
+      </div>
+    </div>
+
+    <div class="about-body reveal">
+      <div class="eyebrow">About</div>
+      <h2>Brand thinking. Product instinct. AI tools.</h2>
+      <p>I am a brand strategist who learned the work by doing it. I started <strong>ROOS India</strong> out of undergrad, joined a cultural-platform <strong>founder's office</strong> to help it raise $5M, led activations at <strong>Galleri5</strong> that earned a Global Gold, and most recently owned <strong>Rs 6 Cr+ in agency accounts</strong> at Tonic Worldwide across Nykaa, Dabur, and Colgate.</p>
+      <p>At <strong>Masters' Union</strong>, I am closing the loop on the technology side. I build with AI daily: Google AI Studio for content prototyping, KNIME and Tableau for data analysis, Claude Code for product builds, Whisper Flow for research workflows, and n8n for automation. The goal is not to seem technical. It is to make brand decisions that are defensible when a PM asks why.</p>
+      <p>What I am building toward: a role where brand insight and product thinking sit at the same table, at a company that operates at <strong>global scale</strong> and measures everything.</p>
+
+      <div class="principles">
+        <div class="principle">
+          <div class="pn">01</div>
+          <h5>Start with the consumer.</h5>
+          <p>The cleanest deck loses to the team that actually understands who is on the other side of the screen.</p>
+        </div>
+        <div class="principle">
+          <div class="pn">02</div>
+          <h5>Ship, then sharpen.</h5>
+          <p>A live MVP teaches more in a week than a strategy document does in a quarter.</p>
+        </div>
+        <div class="principle">
+          <div class="pn">03</div>
+          <h5>Let data kill the ego.</h5>
+          <p>The best brand instinct is still a hypothesis. Dashboards exist to tell you when you are wrong, and I read them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section class="wrap" id="experience">
+  <div class="reveal">
+    <div class="eyebrow">Experience</div>
+    <h2>Six years, four chapters.</h2>
+    <p class="lede">From founding my own label to driving Rs 6 Cr+ in accounts, always in rooms where strategy and execution had to coexist.</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2024–25</strong>Mumbai</div>
+      <div class="role-head">
+        <h4>Tonic Worldwide</h4>
+        <div class="rt">Content and Strategy Lead · New Business Lead</div>
+        <div class="rl">Digital marketing agency · Mumbai and UAE</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Owned <strong>Rs 6 Cr+ in accounts</strong> across Nykaa, Dabur, Colgate, and 7+ marquee brands.</li>
+          <li>Shipped <strong>7 to 10 brand strategies per month</strong>, orchestrating 18+ cross-functional teams.</li>
+          <li>Launched a new vertical in India and UAE: <strong>30% revenue growth, 50% client-base growth</strong>.</li>
+          <li>Two national awards for Dabur Herb'l x Star Wars (Silver E4M, Bronze ET Digiplus).</li>
+          <li>Integrated AI content tools (Midjourney, Google AI Studio) into the creative pipeline, reducing the ideation-to-brief cycle by approximately 40%.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2022–24</strong>Bengaluru</div>
+      <div class="role-head">
+        <h4>Peepul Tree Ventures <span style="font-size:0.75em;color:var(--muted);font-style:italic;font-weight:400;">(Live History India)</span></h4>
+        <div class="rt">Founder's Office · Strategy and Community</div>
+        <div class="rl">Cultural platform · Bengaluru</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Enabled the <strong>$5M seed fundraise</strong> alongside founders on launch and early growth.</li>
+          <li>Drove <strong>20K+ monthly visitors in 3 months</strong> via MVP launch and content-led GTM.</li>
+          <li><strong>2x artisan product sales</strong> across Shopify, Etsy, and Amazon.</li>
+          <li>Built a <strong>500+ creator community</strong> on WhatsApp and Facebook from scratch.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2021</strong>Bengaluru</div>
+      <div class="role-head">
+        <h4>Galleri5 <span style="font-size:0.75em;color:var(--muted);font-style:italic;font-weight:400;">(now Collective Artists Network)</span></h4>
+        <div class="rt">Senior Marketing Specialist</div>
+        <div class="rl">Creator-tech platform · Bengaluru</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li><strong>50,000+ activations</strong> for Myntra EORS, winning a <strong>Global Gold Award</strong>.</li>
+          <li>Led <strong>100+ campaigns</strong> for 20+ lifestyle brands including H&amp;M, Myntra, and Cultfit.</li>
+          <li>Boosted platform adoption <strong>30%</strong> and cut ops time 20% through workflow automation.</li>
+          <li>Managed and mentored a 6-member team across curation and front-end UX.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2019–20</strong>Mumbai</div>
+      <div class="role-head">
+        <h4>ROOS India</h4>
+        <div class="rt">Founder</div>
+        <div class="rl">Upcycled fashion label · Pan-India D2C</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Built the label to <strong>Rs 5L+ revenue</strong> through pan-India D2C from a standing start.</li>
+          <li>Sold <strong>500+ upcycled garments</strong>, enabling 1,000+ women to repurpose their wardrobes.</li>
+          <li>Showcased at Khar Gymkhana and The Lil Flea, earning organic Etsy onboarding at <strong>zero CAC</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CAPABILITIES -->
+<section class="wrap" id="capabilities">
+  <div class="reveal">
+    <div class="eyebrow">Capabilities</div>
+    <h2>The toolkit.</h2>
+    <p class="lede">Strategy and execution on one side. AI, data, and product tooling on the other.</p>
+  </div>
+
+  <div class="caps">
+    <div class="cap-card reveal">
+      <h4>Brand Strategy and Positioning</h4>
+      <div class="cap-list">
+        <span>Brand Strategy</span>
+        <span>Creative Direction</span>
+        <span>GTM and Positioning</span>
+        <span>Campaign Development</span>
+        <span>Content and Storytelling</span>
+        <span>Consumer Insight</span>
+        <span>Category Analysis</span>
+        <span>Luxury and D2C Branding</span>
+        <span>Stakeholder Management</span>
+        <span>Agency Management</span>
+      </div>
+    </div>
+
+    <div class="cap-card reveal">
+      <h4>Product Marketing and Growth</h4>
+      <div class="cap-list">
+        <span>Product Marketing</span>
+        <span>D2C Operations</span>
+        <span>MVP Launch</span>
+        <span>User Segmentation</span>
+        <span>Community Building</span>
+        <span>E-commerce Ops</span>
+        <span>Influencer Strategy</span>
+        <span>Cross-functional Delivery</span>
+        <span>0 to 1 Builds</span>
+        <span>Funnel Optimisation</span>
+      </div>
+    </div>
+
+    <div class="cap-card reveal">
+      <h4>AI and Data Analytics</h4>
+      <div class="cap-list">
+        <span class="highlight">Google AI Studio</span>
+        <span class="highlight">Claude Code</span>
+        <span class="highlight">Whisper Flow</span>
+        <span class="highlight">Stitch</span>
+        <span class="highlight">KNIME</span>
+        <span class="highlight">Tableau</span>
+        <span>Power BI</span>
+        <span>n8n</span>
+        <span>Data Visualisation</span>
+        <span>Cohort Analysis</span>
+        <span>Performance Reporting</span>
+        <span>Prompt Engineering</span>
+      </div>
+    </div>
+
+    <div class="cap-card reveal">
+      <h4>Creative and Design Tools</h4>
+      <div class="cap-list">
+        <span>Figma</span>
+        <span>Framer</span>
+        <span>Adobe Suite</span>
+        <span>Canva</span>
+        <span>Midjourney</span>
+        <span>Shopify</span>
+        <span>Amazon Seller Central</span>
+        <span>Meta Ads Manager</span>
+        <span>Notion</span>
+        <span>Asana</span>
+      </div>
+    </div>
+
+    <div class="cap-card full-width reveal">
+      <h4>Sectors</h4>
+      <div class="cap-list">
+        <span>Beauty and Personal Care</span>
+        <span>Fashion and Lifestyle</span>
+        <span>Luxury</span>
+        <span>D2C and E-commerce</span>
+        <span>Consumer Tech</span>
+        <span>AI and Creator Tools</span>
+        <span>Sustainability and Circular Economy</span>
+        <span>Cultural Platforms</span>
+        <span>B2B and SaaS</span>
+        <span>Food and Beverage</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EDUCATION -->
+<section class="wrap section-tight" id="education">
+  <div class="reveal">
+    <div class="eyebrow">Education</div>
+    <h2>Where I learned the rest.</h2>
+  </div>
+
+  <div class="timeline">
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2025–26</strong>Gurugram</div>
+      <div class="role-head">
+        <h4>Masters' Union</h4>
+        <div class="rt">PGP · Technology and Business Management</div>
+        <div class="rl">Cohort of 320 · AI, Product and Strategy track</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Core Member, <strong>Third Block Club</strong>: 3 of 320 students selected for the founding cohort.</li>
+          <li><strong>Rs 50K Venture Grant</strong> winner (1 of 10 from 120 teams), building RuSticks, now in 20+ outlets pan-India.</li>
+          <li>Co-Founder, For the Fours · Social Media Lead, Vinyasa Earth NGO.</li>
+          <li>Curriculum covers AI tooling, data analytics, product management, and B2B go-to-market.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2017–19</strong>Mumbai · Milan</div>
+      <div class="role-head">
+        <h4>Pearl Academy</h4>
+        <div class="rt">PG · Luxury Brand Management · University of Nottingham</div>
+        <div class="rl">Exchange · Domus Academy, Milan</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>CGPA 3 / 4. Selected for the <strong>Milan exchange</strong> at one of Europe's most prestigious design schools.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2014–17</strong>Kolkata</div>
+      <div class="role-head">
+        <h4>JD Birla Institute</h4>
+        <div class="rt">BBA · Marketing (Honours) · Jadavpur University</div>
+        <div class="rl">CGPA 9.63 / 10</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Top academic performance · Marketing honours specialisation.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- RECOGNITION -->
+<section class="wrap section-tight">
+  <div class="reveal">
+    <div class="eyebrow">Recognition</div>
+    <h2>Awards and honours.</h2>
+  </div>
+
+  <div class="awards-grid">
+    <div class="award gold reveal">
+      <div class="badge">★</div>
+      <div>
+        <h5>Global Gold · Galleri5 x Myntra EORS</h5>
+        <p>For 50,000+ activations led during the End of Reason Sale.</p>
+      </div>
+    </div>
+    <div class="award silver reveal">
+      <div class="badge">★</div>
+      <div>
+        <h5>Silver · Exchange4Media Awards</h5>
+        <p>Dabur Herb'l x Star Wars campaign · National recognition · 2024.</p>
+      </div>
+    </div>
+    <div class="award bronze reveal">
+      <div class="badge">★</div>
+      <div>
+        <h5>Bronze · ET Digiplus Awards</h5>
+        <p>Dabur Herb'l x Star Wars campaign · National recognition · 2024.</p>
+      </div>
+    </div>
+    <div class="award reveal">
+      <div class="badge">Rs</div>
+      <div>
+        <h5>Rs 50K Venture Grant · Masters' Union</h5>
+        <p>RuSticks · One of 10 teams from 120 selected for seed capital.</p>
+      </div>
+    </div>
+    <div class="award reveal">
+      <div class="badge">◇</div>
+      <div>
+        <h5>Founder · ROOS India</h5>
+        <p>Rs 5L+ revenue, 500+ garments sold pan-India, onboarded to Etsy at zero CAC.</p>
+      </div>
+    </div>
+    <div class="award reveal">
+      <div class="badge">✱</div>
+      <div>
+        <h5>Exchange Scholar · Domus Academy, Milan</h5>
+        <p>Selected for the Milan exchange during Pearl Academy's Luxury Brand Management programme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap" style="padding-top:6.5rem; padding-bottom:3rem;">
+    <div class="eyebrow reveal">Get in touch</div>
+    <h2 class="reveal">Let's build something that matters.</h2>
+    <p class="lede reveal">Open to full-time roles in brand strategy, product marketing, and growth, especially at companies shipping at global scale. Based in India, open to relocating.</p>
+
+    <div class="contact-grid">
+      <div class="contact-links reveal">
+        <a href="mailto:tbm26khushbu.kothari@mastersunion.org">
+          <span>
+            <div class="ltl">Email</div>
+            <div class="lval">tbm26khushbu.kothari@mastersunion.org</div>
+          </span>
+          <span class="arr">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/kotharikhushbu/" target="_blank" rel="noopener">
+          <span>
+            <div class="ltl">LinkedIn</div>
+            <div class="lval">linkedin.com/in/kotharikhushbu</div>
+          </span>
+          <span class="arr">↗</span>
+        </a>
+        <a href="tel:+918697485655">
+          <span>
+            <div class="ltl">Phone</div>
+            <div class="lval">+91 86974 85655</div>
+          </span>
+          <span class="arr">→</span>
+        </a>
+        <!-- Add your resume PDF to assets/resume-khushbu-kothari.pdf and update this href -->
+        <a href="assets/resume-khushbu-kothari.pdf" target="_blank">
+          <span>
+            <div class="ltl">Resume</div>
+            <div class="lval">Download one-page CV</div>
+          </span>
+          <span class="arr">↓</span>
+        </a>
+      </div>
+
+      <div class="reveal">
+        <p class="signoff">
+          Best read with a cup of filter coffee, in a quiet hour, on the side of someone who hires for taste and execution in equal measure.
+        </p>
+      </div>
+    </div>
+
+    <div class="foot-meta">
+      <span>© Khushbu Kothari · 2026</span>
+      <span>Set in Fraunces and Inter</span>
+      <span>Built with Claude Code</span>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+
+</body>
+</html>
