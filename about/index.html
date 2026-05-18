@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Khushbu Kothari</title>
+<meta name="description" content="Background, experience, capabilities, and education. Khushbu Kothari — Brand Strategist and Product Marketer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400..500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f0; --bg-alt: #f1ece1; --bg-dark: #15110d;
+    --ink: #15110d; --ink-2: #2d2620; --muted: #6b6258; --faint: #a89e90;
+    --line: #e3dccc; --accent: #c4522d; --accent-dark: #9a3e21;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --r-sm: 4px; --r-md: 8px; --r-lg: 16px; --r-xl: 24px;
+    --shadow-1: 0 1px 2px rgba(21,17,13,0.04), 0 2px 8px rgba(21,17,13,0.04);
+    --shadow-2: 0 8px 24px rgba(21,17,13,0.08), 0 2px 8px rgba(21,17,13,0.06);
+    --page-pad: 2.5rem;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent); color: #fff; }
+
+  .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--page-pad); }
+  section { padding: 6rem 0; }
+  .section-tight { padding: 4rem 0; }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase;
+    letter-spacing: 0.18em; color: var(--muted); display: inline-flex;
+    align-items: center; gap: 0.65rem; margin-bottom: 1.25rem;
+  }
+  .eyebrow::before { content: ''; width: 1.5rem; height: 1px; background: var(--accent); flex-shrink: 0; }
+
+  h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; color: var(--ink); line-height: 1.1; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(2rem, 4vw, 3rem); font-variation-settings: 'opsz' 144; margin-bottom: 1rem; }
+  h3 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-variation-settings: 'opsz' 72; }
+  h4 { font-size: 1.3rem; font-variation-settings: 'opsz' 36; }
+
+  .lede { font-family: var(--serif); font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: var(--muted); line-height: 1.55; max-width: 54ch; font-variation-settings: 'opsz' 24; }
+
+  /* NAV */
+  nav.topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    background: rgba(250,247,240,0.88); backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    border-bottom: 1px solid transparent; transition: border-color 0.3s;
+  }
+  nav.topbar.scrolled { border-color: var(--line); }
+  nav.topbar .inner {
+    max-width: 1200px; margin: 0 auto; padding: 1.1rem var(--page-pad);
+    display: flex; justify-content: space-between; align-items: center; gap: 2rem;
+  }
+  nav .logo { font-family: var(--serif); font-size: 1rem; font-style: italic; color: var(--ink); font-variation-settings: 'opsz' 24; white-space: nowrap; }
+  nav ul { display: flex; gap: 2rem; list-style: none; }
+  nav ul a { font-size: 0.82rem; color: var(--ink-2); transition: color 0.2s; }
+  nav ul a:hover { color: var(--accent); }
+  nav .back-link { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); display: inline-flex; align-items: center; gap: 0.4rem; transition: color 0.2s; }
+  nav .back-link:hover { color: var(--accent); }
+  nav .cta { font-size: 0.82rem; padding: 0.55rem 1rem; background: var(--ink); color: var(--bg); border-radius: 999px; transition: background 0.2s; white-space: nowrap; }
+  nav .cta:hover { background: var(--accent); }
+
+  /* PAGE HEADER */
+  .page-header { padding: 9rem 0 4rem; border-bottom: 1px solid var(--line); }
+  .page-header h1 { font-size: clamp(2.8rem, 6vw, 4.5rem); font-variation-settings: 'opsz' 144; line-height: 1; margin-bottom: 1.25rem; letter-spacing: -0.03em; }
+
+  /* ABOUT */
+  .about-section { padding: 6rem 0; background: var(--bg-alt); margin: 0 calc(50% - 50vw); padding-left: calc(50vw - 50%); padding-right: calc(50vw - 50%); }
+  .about-inner { max-width: 1200px; margin: 0 auto; padding: 0 var(--page-pad); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4.5rem; align-items: start; }
+  .about-body p { font-size: 1rem; color: var(--ink-2); line-height: 1.7; margin-bottom: 1.1rem; }
+  .about-body p:last-child { margin-bottom: 0; }
+  .about-body strong { color: var(--ink); font-weight: 500; }
+  .principles { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .principle { background: var(--bg); border-radius: var(--r-md); padding: 1.35rem; border: 1px solid var(--line); }
+  .principle .pn { font-family: var(--mono); font-size: 0.66rem; color: var(--accent); margin-bottom: 0.45rem; letter-spacing: 0.15em; }
+  .principle h5 { font-family: var(--serif); font-size: 1.05rem; margin-bottom: 0.45rem; font-variation-settings: 'opsz' 24; }
+  .principle p { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin: 0; }
+
+  /* TIMELINE */
+  .timeline { margin-top: 2.5rem; border-top: 1px solid var(--line); }
+  .role { display: grid; grid-template-columns: 130px 1.1fr 1.5fr; gap: 2rem; padding: 2.25rem 0; border-bottom: 1px solid var(--line); transition: background 0.25s; }
+  .role:hover { background: rgba(196,82,45,0.025); }
+  .role-year { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); letter-spacing: 0.08em; padding-top: 0.2rem; }
+  .role-year strong { display: block; font-family: var(--serif); font-size: 1.4rem; color: var(--ink); font-variation-settings: 'opsz' 36; font-weight: 400; margin-bottom: 0.2rem; }
+  .role-head h4 { font-size: 1.3rem; font-variation-settings: 'opsz' 36; margin-bottom: 0.4rem; line-height: 1.2; }
+  .role-head .rt { font-size: 0.82rem; color: var(--accent); margin-bottom: 0.4rem; font-weight: 500; }
+  .role-head .rl { font-size: 0.78rem; color: var(--muted); }
+  .role-body ul { list-style: none; }
+  .role-body li { position: relative; padding-left: 1.1rem; margin-bottom: 0.55rem; font-size: 0.9rem; color: var(--ink-2); line-height: 1.55; }
+  .role-body li::before { content: ''; position: absolute; left: 0; top: 0.58rem; width: 5px; height: 1px; background: var(--accent); }
+  .role-body li strong { color: var(--accent); font-weight: 500; }
+
+  /* CAPABILITIES */
+  .caps { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .cap-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); padding: 1.75rem; }
+  .cap-card.full-width { grid-column: 1 / -1; }
+  .cap-card h4 { font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 1.1rem; font-weight: 500; }
+  .cap-list { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+  .cap-list span { font-size: 0.82rem; padding: 0.4rem 0.8rem; background: var(--bg-alt); border-radius: 999px; color: var(--ink-2); }
+
+  /* AWARDS */
+  .awards-grid { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  .award { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); padding: 1.5rem; display: grid; grid-template-columns: auto 1fr; gap: 1.1rem; align-items: start; }
+  .award .badge { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-size: 1rem; flex-shrink: 0; }
+  .award.gold .badge { background: #b88c3d; }
+  .award.silver .badge { background: #94908a; }
+  .award.bronze .badge { background: #a06a3c; }
+  .award h5 { font-family: var(--serif); font-size: 1.1rem; margin-bottom: 0.35rem; font-variation-settings: 'opsz' 24; line-height: 1.25; }
+  .award p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+  /* CONTACT */
+  .contact { background: var(--bg-dark); color: var(--bg); margin: 0 calc(50% - 50vw); padding-left: calc(50vw - 50%); padding-right: calc(50vw - 50%); }
+  .contact .wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--page-pad); }
+  .contact .eyebrow { color: rgba(250,247,240,0.5); }
+  .contact .eyebrow::before { background: var(--accent); }
+  .contact h2 { color: var(--bg); font-size: clamp(2.2rem, 5vw, 4rem); margin-bottom: 1.25rem; max-width: 18ch; }
+  .contact .lede { color: rgba(250,247,240,0.65); }
+  .contact-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; margin-top: 3.5rem; }
+  .contact-links a { display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 0; border-bottom: 1px solid rgba(250,247,240,0.1); color: var(--bg); transition: padding 0.28s, color 0.28s; gap: 1rem; }
+  .contact-links a:hover { padding-left: 0.65rem; color: var(--accent); }
+  .contact-links .ltl { font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(250,247,240,0.45); margin-bottom: 0.25rem; }
+  .contact-links a:hover .ltl { color: var(--accent); }
+  .contact-links .lval { font-family: var(--serif); font-size: 1.15rem; font-variation-settings: 'opsz' 36; word-break: break-word; }
+  .contact-links .arr { font-size: 1rem; transition: transform 0.28s; flex-shrink: 0; }
+  .contact-links a:hover .arr { transform: translateX(5px); }
+  .signoff { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: rgba(250,247,240,0.7); line-height: 1.6; max-width: 28ch; font-variation-settings: 'opsz' 24; }
+  .signoff::before { content: ''; display: block; width: 1.75rem; height: 1px; background: var(--accent); margin-bottom: 1.1rem; }
+  .foot-meta { margin-top: 4.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(250,247,240,0.1); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(250,247,240,0.35); }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.85s cubic-bezier(0.16,1,0.3,1), transform 0.85s cubic-bezier(0.16,1,0.3,1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* SCROLL PROGRESS */
+  .scroll-progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--accent); z-index: 2000; width: 0; transition: width 0.08s linear; pointer-events: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    :root { --page-pad: 2rem; }
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .role { grid-template-columns: 100px 1fr; }
+    .role-body { grid-column: 1 / -1; }
+    .principles { grid-template-columns: 1fr; }
+    .awards-grid { grid-template-columns: 1fr; }
+    .caps { grid-template-columns: 1fr; }
+    .cap-card.full-width { grid-column: auto; }
+    section { padding: 4rem 0; }
+    .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    nav ul { display: none; }
+  }
+  @media (max-width: 640px) {
+    :root { --page-pad: 1.25rem; }
+    .role { grid-template-columns: 1fr; gap: 0.85rem; padding: 1.75rem 0; }
+    section { padding: 3rem 0; }
+    nav.topbar .inner { padding: 0.9rem var(--page-pad); }
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAV -->
+<nav class="topbar" id="nav">
+  <div class="inner">
+    <a href="../index.html" class="logo">Khushbu Kothari</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#recognition">Recognition</a></li>
+    </ul>
+    <a href="#contact" class="cta">Get in touch</a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="wrap">
+  <div class="page-header reveal">
+    <div class="eyebrow">Background</div>
+    <h1>Brand thinking.<br>Product instinct.<br>AI tools.</h1>
+    <p class="lede" style="margin-top:1.25rem;">Six years across founder's offices, agencies, and a label of my own. AI-fluent, data-driven, shipping at scale.</p>
+    <a href="../index.html" style="display:inline-flex;align-items:center;gap:0.4rem;margin-top:2rem;font-family:var(--mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">← View portfolio</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-grid">
+      <img src="../assets/images/about/about-photo.png" alt="Khushbu Kothari" class="reveal" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--shadow-2);">
+      <div class="about-body reveal">
+        <div class="eyebrow">About</div>
+        <h2>I am a brand strategist who learned the work by doing it.</h2>
+        <p>I started <strong>ROOS India</strong> out of undergrad, joined a cultural-platform <strong>founder's office</strong> to help it raise $5M, led activations at <strong>Galleri5</strong> that earned a Global Gold, and most recently owned <strong>Rs 6 Cr+ in agency accounts</strong> at Tonic Worldwide across Nykaa, Dabur, and Colgate.</p>
+        <p>At <strong>Masters' Union</strong>, I am closing the loop on the technology side. I build with AI daily: Google AI Studio for content prototyping, KNIME and Tableau for data analysis, Claude Code for product builds, Whisper Flow for research workflows, and n8n for automation. The goal is not to seem technical. It is to make brand decisions that are defensible when a PM asks why.</p>
+        <p>What I am building toward: a role where brand insight and product thinking sit at the same table, at a company that operates at <strong>global scale</strong> and measures everything.</p>
+        <div class="principles">
+          <div class="principle">
+            <div class="pn">01</div>
+            <h5>Start with the consumer.</h5>
+            <p>The cleanest deck loses to the team that actually understands who is on the other side of the screen.</p>
+          </div>
+          <div class="principle">
+            <div class="pn">02</div>
+            <h5>Ship, then sharpen.</h5>
+            <p>A live MVP teaches more in a week than a strategy document does in a quarter.</p>
+          </div>
+          <div class="principle">
+            <div class="pn">03</div>
+            <h5>Let data kill the ego.</h5>
+            <p>The best brand instinct is still a hypothesis. Dashboards exist to tell you when you are wrong, and I read them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<section class="wrap" id="experience">
+  <div class="reveal">
+    <div class="eyebrow">Experience</div>
+    <h2>Six years, four chapters.</h2>
+    <p class="lede">From founding my own label to driving Rs 6 Cr+ in accounts, always in rooms where strategy and execution had to coexist.</p>
+  </div>
+
+  <div class="timeline">
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2024–25</strong>Mumbai</div>
+      <div class="role-head">
+        <h4>Tonic Worldwide</h4>
+        <div class="rt">Content and Strategy Lead · New Business Lead</div>
+        <div class="rl">Digital marketing agency · Mumbai and UAE</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Owned <strong>Rs 6 Cr+ in accounts</strong> across Nykaa, Dabur, Colgate, and 7+ marquee brands.</li>
+          <li>Shipped <strong>7 to 10 brand strategies per month</strong>, orchestrating 18+ cross-functional teams.</li>
+          <li>Launched a new vertical in India and UAE: <strong>30% revenue growth, 50% client-base growth</strong>.</li>
+          <li>Two national awards for Dabur Herb'l x Star Wars (Silver E4M, Bronze ET Digiplus).</li>
+          <li>Integrated AI content tools (Midjourney, Google AI Studio) into the creative pipeline, reducing the ideation-to-brief cycle by approximately 40%.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2022–24</strong>Bengaluru</div>
+      <div class="role-head">
+        <h4>Peepul Tree Ventures <span style="font-size:0.75em;color:var(--muted);font-style:italic;font-weight:400;">(Live History India)</span></h4>
+        <div class="rt">Founder's Office · Strategy and Community</div>
+        <div class="rl">Cultural platform · Bengaluru</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Enabled the <strong>$5M seed fundraise</strong> alongside founders on launch and early growth.</li>
+          <li>Drove <strong>20K+ monthly visitors in 3 months</strong> via MVP launch and content-led GTM.</li>
+          <li><strong>2x artisan product sales</strong> across Shopify, Etsy, and Amazon.</li>
+          <li>Built a <strong>500+ creator community</strong> on WhatsApp and Facebook from scratch.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2021</strong>Bengaluru</div>
+      <div class="role-head">
+        <h4>Galleri5 <span style="font-size:0.75em;color:var(--muted);font-style:italic;font-weight:400;">(now Collective Artists Network)</span></h4>
+        <div class="rt">Senior Marketing Specialist</div>
+        <div class="rl">Creator-tech platform · Bengaluru</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li><strong>50,000+ activations</strong> for Myntra EORS, winning a <strong>Global Gold Award</strong>.</li>
+          <li>Led <strong>100+ campaigns</strong> for 20+ lifestyle brands including H&amp;M, Myntra, and Cultfit.</li>
+          <li>Boosted platform adoption <strong>30%</strong> and cut ops time 20% through workflow automation.</li>
+          <li>Managed and mentored a 6-member team across curation and front-end UX.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2019–20</strong>Mumbai</div>
+      <div class="role-head">
+        <h4>ROOS India</h4>
+        <div class="rt">Founder</div>
+        <div class="rl">Upcycled fashion label · Pan-India D2C</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Built the label to <strong>Rs 5L+ revenue</strong> through pan-India D2C from a standing start.</li>
+          <li>Sold <strong>500+ upcycled garments</strong>, enabling 1,000+ women to repurpose their wardrobes.</li>
+          <li>Showcased at Khar Gymkhana and The Lil Flea, earning organic Etsy onboarding at <strong>zero CAC</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CAPABILITIES -->
+<section class="wrap section-tight" id="capabilities">
+  <div class="reveal">
+    <div class="eyebrow">Capabilities</div>
+    <h2>The toolkit.</h2>
+    <p class="lede">Strategy and execution on one side. AI, data, and product tooling on the other.</p>
+  </div>
+
+  <div class="caps">
+    <div class="cap-card reveal">
+      <h4>Brand Strategy and Positioning</h4>
+      <div class="cap-list">
+        <span>Brand Strategy</span>
+        <span>Creative Direction</span>
+        <span>GTM and Positioning</span>
+        <span>Campaign Development</span>
+        <span>Content and Storytelling</span>
+        <span>Consumer Insight</span>
+        <span>Category Analysis</span>
+        <span>Luxury and D2C Branding</span>
+        <span>Stakeholder Management</span>
+        <span>Agency Management</span>
+      </div>
+    </div>
+
+    <div class="cap-card reveal">
+      <h4>Product Marketing and Growth</h4>
+      <div class="cap-list">
+        <span>Product Marketing</span>
+        <span>D2C Operations</span>
+        <span>MVP Launch</span>
+        <span>User Segmentation</span>
+        <span>Community Building</span>
+        <span>E-commerce Ops</span>
+        <span>Influencer Strategy</span>
+        <span>Cross-functional Delivery</span>
+        <span>0 to 1 Builds</span>
+        <span>Funnel Optimisation</span>
+      </div>
+    </div>
+
+    <div class="cap-card reveal">
+      <h4>AI and Data Analytics</h4>
+      <div class="cap-list">
+        <span>Google AI Studio</span>
+        <span>Claude Code</span>
+        <span>Whisper Flow</span>
+        <span>Stitch</span>
+        <span>KNIME</span>
+        <span>Tableau</span>
+        <span>Power BI</span>
+        <span>n8n</span>
+        <span>Data Visualisation</span>
+        <span>Cohort Analysis</span>
+        <span>Performance Reporting</span>
+        <span>Prompt Engineering</span>
+      </div>
+    </div>
+
+    <div class="cap-card reveal">
+      <h4>Creative and Design Tools</h4>
+      <div class="cap-list">
+        <span>Figma</span>
+        <span>Framer</span>
+        <span>Adobe Suite</span>
+        <span>Canva</span>
+        <span>Midjourney</span>
+        <span>Shopify</span>
+        <span>Amazon Seller Central</span>
+        <span>Meta Ads Manager</span>
+        <span>Notion</span>
+        <span>Asana</span>
+      </div>
+    </div>
+
+    <div class="cap-card full-width reveal">
+      <h4>Sectors</h4>
+      <div class="cap-list">
+        <span>Beauty and Personal Care</span>
+        <span>Fashion and Lifestyle</span>
+        <span>Luxury</span>
+        <span>D2C and E-commerce</span>
+        <span>Consumer Tech</span>
+        <span>AI and Creator Tools</span>
+        <span>Sustainability and Circular Economy</span>
+        <span>Cultural Platforms</span>
+        <span>B2B and SaaS</span>
+        <span>Food and Beverage</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EDUCATION -->
+<section class="wrap section-tight" id="education">
+  <div class="reveal">
+    <div class="eyebrow">Education</div>
+    <h2>Where I learned the rest.</h2>
+  </div>
+
+  <div class="timeline">
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2025–26</strong>Gurugram</div>
+      <div class="role-head">
+        <h4>Masters' Union</h4>
+        <div class="rt">PGP · Technology and Business Management</div>
+        <div class="rl">Cohort of 320 · AI, Product and Strategy track</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Core Member, <strong>Third Block Club</strong>: 3 of 320 students selected for the founding cohort.</li>
+          <li><strong>Rs 50K Venture Grant</strong> winner (1 of 10 from 120 teams), building RuSticks, now in 20+ outlets pan-India.</li>
+          <li>Co-Founder, For the Fours · Social Media Lead, Vinyasa Earth NGO.</li>
+          <li>Curriculum covers AI tooling, data analytics, product management, and B2B go-to-market.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2017–19</strong>Mumbai · Milan</div>
+      <div class="role-head">
+        <h4>Pearl Academy</h4>
+        <div class="rt">PG · Luxury Brand Management · University of Nottingham</div>
+        <div class="rl">Exchange · Domus Academy, Milan</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>CGPA 3 / 4. Selected for the <strong>Milan exchange</strong> at one of Europe's most prestigious design schools.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="role reveal">
+      <div class="role-year"><strong>2014–17</strong>Kolkata</div>
+      <div class="role-head">
+        <h4>JD Birla Institute</h4>
+        <div class="rt">BBA · Marketing (Honours) · Jadavpur University</div>
+        <div class="rl">CGPA 9.63 / 10</div>
+      </div>
+      <div class="role-body">
+        <ul>
+          <li>Top academic performance · Marketing honours specialisation.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- RECOGNITION -->
+<section class="wrap section-tight" id="recognition">
+  <div class="reveal">
+    <div class="eyebrow">Recognition</div>
+    <h2>Awards and honours.</h2>
+  </div>
+
+  <div class="awards-grid">
+    <div class="award gold reveal">
+      <div class="badge">★</div>
+      <div>
+        <h5>Global Gold · Galleri5 x Myntra EORS</h5>
+        <p>For 50,000+ activations led during the End of Reason Sale.</p>
+      </div>
+    </div>
+    <div class="award silver reveal">
+      <div class="badge">★</div>
+      <div>
+        <h5>Silver · Exchange4Media Awards</h5>
+        <p>Dabur Herb'l x Star Wars campaign · National recognition · 2024.</p>
+      </div>
+    </div>
+    <div class="award bronze reveal">
+      <div class="badge">★</div>
+      <div>
+        <h5>Bronze · ET Digiplus Awards</h5>
+        <p>Dabur Herb'l x Star Wars campaign · National recognition · 2024.</p>
+      </div>
+    </div>
+    <div class="award reveal">
+      <div class="badge">Rs</div>
+      <div>
+        <h5>Rs 50K Venture Grant · Masters' Union</h5>
+        <p>RuSticks · One of 10 teams from 120 selected for seed capital.</p>
+      </div>
+    </div>
+    <div class="award reveal">
+      <div class="badge">◇</div>
+      <div>
+        <h5>Founder · ROOS India</h5>
+        <p>Rs 5L+ revenue, 500+ garments sold pan-India, onboarded to Etsy at zero CAC.</p>
+      </div>
+    </div>
+    <div class="award reveal">
+      <div class="badge">✱</div>
+      <div>
+        <h5>Exchange Scholar · Domus Academy, Milan</h5>
+        <p>Selected for the Milan exchange during Pearl Academy's Luxury Brand Management programme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap" style="padding-top:6.5rem; padding-bottom:3rem;">
+    <div class="eyebrow reveal">Get in touch</div>
+    <h2 class="reveal">Let's build something that matters.</h2>
+    <p class="lede reveal">Open to full-time roles in brand strategy, product marketing, and growth, especially at companies shipping at global scale. Based in India, open to relocating.</p>
+
+    <div class="contact-grid">
+      <div class="contact-links reveal">
+        <a href="mailto:tbm26khushbu.kothari@mastersunion.org">
+          <span>
+            <div class="ltl">Email</div>
+            <div class="lval">tbm26khushbu.kothari@mastersunion.org</div>
+          </span>
+          <span class="arr">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/kotharikhushbu/" target="_blank" rel="noopener">
+          <span>
+            <div class="ltl">LinkedIn</div>
+            <div class="lval">linkedin.com/in/kotharikhushbu</div>
+          </span>
+          <span class="arr">↗</span>
+        </a>
+        <a href="tel:+918697485655">
+          <span>
+            <div class="ltl">Phone</div>
+            <div class="lval">+91 86974 85655</div>
+          </span>
+          <span class="arr">→</span>
+        </a>
+        <a href="../assets/pdf/ResumeKhushbuKothari_.pdf" target="_blank">
+          <span>
+            <div class="ltl">Resume</div>
+            <div class="lval">Download one-page CV</div>
+          </span>
+          <span class="arr">↓</span>
+        </a>
+      </div>
+
+      <div class="reveal">
+        <p class="signoff">
+          Best read with a cup of filter coffee, in a quiet hour, on the side of someone who hires for taste and execution in equal measure.
+        </p>
+      </div>
+    </div>
+
+    <div class="foot-meta">
+      <span>© Khushbu Kothari · 2026</span>
+      <span>Set in Fraunces and Inter</span>
+      <span>Built with Claude Code</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  const prog = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    prog.style.width = scrolled + '%';
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -1155,6 +1155,48 @@
   }
 
   /* =========================================
+     ABOUT TEASER
+     ========================================= */
+  .about-teaser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .at-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1.75rem;
+  }
+  .at-chips span {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    padding: 0.35rem 0.75rem;
+    background: var(--bg-alt);
+    border-radius: 999px;
+    color: var(--ink-2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid var(--line);
+  }
+  .at-cta {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: gap 0.2s;
+  }
+  .at-cta:hover { gap: 0.6rem; }
+
+  /* =========================================
      REVEAL
      ========================================= */
   .reveal {
@@ -1192,10 +1234,7 @@
     .role { grid-template-columns: 100px 1fr; }
     .role-body { grid-column: 1 / -1; }
     .grid { grid-template-columns: repeat(2, 1fr); }
-    .principles { grid-template-columns: 1fr; }
-    .awards-grid { grid-template-columns: 1fr; }
-    .caps { grid-template-columns: 1fr; }
-    .cap-card.full-width { grid-column: auto; }
+    .about-teaser { grid-template-columns: 1fr; gap: 2rem; }
     section { padding: 4.5rem 0; }
     .section-tight { padding: 3rem 0; }
     nav ul { display: none; }
@@ -1232,10 +1271,7 @@
     <a href="#top" class="logo">Khushbu Kothari</a>
     <ul>
       <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#capabilities">Capabilities</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="about/">About</a></li>
     </ul>
     <a href="#contact" class="cta">Get in touch</a>
   </div>
@@ -1278,7 +1314,7 @@
 
       <div class="hero-cta">
         <a href="#work" class="btn btn-primary">View selected work <span class="arr">→</span></a>
-        <a href="#capabilities" class="btn btn-ghost">Capabilities <span class="arr">→</span></a>
+        <a href="about/" class="btn btn-ghost">About me <span class="arr">→</span></a>
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
     </div>
@@ -1876,27 +1912,6 @@
 
 </section><!-- /brands-section -->
 
-<!-- TOOLS STRIP -->
-<div class="tools-strip">
-  <div class="wrap">
-    <div class="tools-row">
-      <span class="tools-label">Tools I build with</span>
-      <span class="tool-tag">Google AI Studio</span>
-      <span class="tool-tag">Claude Code</span>
-      <span class="tool-tag">Whisper Flow</span>
-      <span class="tool-tag">Stitch</span>
-      <span class="tool-tag">KNIME</span>
-      <span class="tool-tag">Tableau</span>
-      <span class="tool-tag">Power BI</span>
-      <span class="tool-tag">n8n</span>
-      <span class="tool-tag">Midjourney</span>
-      <span class="tool-tag">Figma</span>
-      <span class="tool-tag">Framer</span>
-      <span class="tool-tag">Meta Ads Manager</span>
-    </div>
-  </div>
-</div>
-
 
 <!-- FEATURED WORK -->
 <section class="casework wrap" id="work">
@@ -1919,27 +1934,6 @@
       <h3 class="case-title">Making a heritage herbal toothpaste irresistible to Gen Z</h3>
       <p class="case-brief">As <strong>Content and Strategy Lead at Tonic Worldwide</strong>, I led the cross-functional team that conceived and shipped the <strong>Dabur Herb'l x Star Wars</strong> campaign, turning a legacy oral-care brand into a pop-culture moment.</p>
 
-      <div class="case-pap">
-        <div class="pap-row">
-          <div class="pap-label">Problem</div>
-          <div class="pap-text">A heritage herbal toothpaste with declining relevance among 18 to 28 urban consumers who did not see Ayurvedic as a desirable identity signal.</div>
-        </div>
-        <div class="pap-row">
-          <div class="pap-label">Approach</div>
-          <div class="pap-text">Bridged the brand's herbal identity with the Star Wars IP through a story-first content system anchored on the "force of nature" insight, deployed across digital, social, and creator partnerships. Used AI-assisted content tooling to accelerate ideation and visual production.</div>
-        </div>
-        <div class="pap-row">
-          <div class="pap-label">Impact</div>
-          <div class="pap-text">Two national awards, a measurable lift in brand consideration with the 18 to 28 cohort, and a replicable playbook the agency now uses for heritage-brand reinventions.</div>
-        </div>
-      </div>
-
-      <div class="case-metrics">
-        <div class="metric"><div class="v">Silver</div><div class="k">Exchange4Media Awards</div></div>
-        <div class="metric"><div class="v">Bronze</div><div class="k">ET Digiplus Awards</div></div>
-        <div class="metric"><div class="v">10+</div><div class="k">marquee brands managed concurrently</div></div>
-      </div>
-
       <div class="case-links">
         <a href="case-studies/dabur-starwars/" class="link-pill">Read full case study <span class="arr">→</span></a>
       </div>
@@ -1960,27 +1954,6 @@
       </div>
       <h3 class="case-title">Helping a cultural platform raise $5M and find its first audience</h3>
       <p class="case-brief">At <strong>Peepul Tree Ventures (Live History India)</strong>, I worked directly with the founders to ship the MVP, build the early-growth engine, and construct the data-backed narrative that anchored the seed round.</p>
-
-      <div class="case-pap">
-        <div class="pap-row">
-          <div class="pap-label">Problem</div>
-          <div class="pap-text">A new platform combining cultural storytelling and commerce needed product traction, audience signals, and a fundable narrative — all simultaneously, with zero brand equity to start.</div>
-        </div>
-        <div class="pap-row">
-          <div class="pap-label">Approach</div>
-          <div class="pap-text">Spearheaded the MVP launch across Shopify, Etsy, and Amazon; executed a content-led GTM; seeded a 500+ creator micro-community on WhatsApp and Facebook; tracked cohort retention and GMV weekly to sharpen the investor deck.</div>
-        </div>
-        <div class="pap-row">
-          <div class="pap-label">Impact</div>
-          <div class="pap-text">20K+ monthly visitors within three months, 2x artisan product sales, and an early-traction data story that helped close a $5M seed round.</div>
-        </div>
-      </div>
-
-      <div class="case-metrics">
-        <div class="metric"><div class="v">$5M</div><div class="k">seed round enabled</div></div>
-        <div class="metric"><div class="v">20K+</div><div class="k">monthly visitors in 3 months</div></div>
-        <div class="metric"><div class="v">500+</div><div class="k">creator community from zero</div></div>
-      </div>
 
       <div class="case-links">
         <a href="case-studies/live-history-india/" class="link-pill">Read full case study <span class="arr">→</span></a>
@@ -2003,27 +1976,6 @@
       </div>
       <h3 class="case-title">Founding a sustainable label that put 1,000+ women back in their own wardrobes</h3>
       <p class="case-brief">I built <strong>ROOS India</strong>, an upcycled fashion label, straight out of my undergrad, growing it into a pan-India D2C operation showcased at Khar Gymkhana and organically onboarded to Etsy at zero CAC.</p>
-
-      <div class="case-pap">
-        <div class="pap-row">
-          <div class="pap-label">Problem</div>
-          <div class="pap-text">India produces enormous quantities of textile waste. Consumers want sustainable options but not the aesthetic compromise that typically comes with upcycled goods.</div>
-        </div>
-        <div class="pap-row">
-          <div class="pap-label">Approach</div>
-          <div class="pap-text">Built a D2C operation around desirability-first upcycling: sourcing unused garments from customers, reworking them into contemporary silhouettes, and building the brand story around reclaiming identity rather than reducing waste.</div>
-        </div>
-        <div class="pap-row">
-          <div class="pap-label">Impact</div>
-          <div class="pap-text">Rs 5L+ revenue from a standing start, 500+ garments sold pan-India, and a community of 1,000+ women repurposing what was once forgotten.</div>
-        </div>
-      </div>
-
-      <div class="case-metrics">
-        <div class="metric"><div class="v">Rs 5L+</div><div class="k">revenue · pan-India D2C</div></div>
-        <div class="metric"><div class="v">500+</div><div class="k">upcycled garments sold</div></div>
-        <div class="metric"><div class="v">1,000+</div><div class="k">women in the repurpose community</div></div>
-      </div>
 
       <div class="case-links">
         <a href="case-studies/roos-india/" class="link-pill">Read full case study <span class="arr">→</span></a>
@@ -2133,324 +2085,24 @@
 </section>
 
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="about-grid">
-
-    <img src="assets/images/about/about-photo.png" alt="Khushbu Kothari" class="reveal" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--shadow-2);">
-
-    <div class="about-body reveal">
-      <div class="eyebrow">About</div>
-      <h2>Brand thinking. Product instinct. AI tools.</h2>
-      <p>I am a brand strategist who learned the work by doing it. I started <strong>ROOS India</strong> out of undergrad, joined a cultural-platform <strong>founder's office</strong> to help it raise $5M, led activations at <strong>Galleri5</strong> that earned a Global Gold, and most recently owned <strong>Rs 6 Cr+ in agency accounts</strong> at Tonic Worldwide across Nykaa, Dabur, and Colgate.</p>
-      <p>At <strong>Masters' Union</strong>, I am closing the loop on the technology side. I build with AI daily: Google AI Studio for content prototyping, KNIME and Tableau for data analysis, Claude Code for product builds, Whisper Flow for research workflows, and n8n for automation. The goal is not to seem technical. It is to make brand decisions that are defensible when a PM asks why.</p>
-      <p>What I am building toward: a role where brand insight and product thinking sit at the same table, at a company that operates at <strong>global scale</strong> and measures everything.</p>
-
-      <div class="principles">
-        <div class="principle">
-          <div class="pn">01</div>
-          <h5>Start with the consumer.</h5>
-          <p>The cleanest deck loses to the team that actually understands who is on the other side of the screen.</p>
-        </div>
-        <div class="principle">
-          <div class="pn">02</div>
-          <h5>Ship, then sharpen.</h5>
-          <p>A live MVP teaches more in a week than a strategy document does in a quarter.</p>
-        </div>
-        <div class="principle">
-          <div class="pn">03</div>
-          <h5>Let data kill the ego.</h5>
-          <p>The best brand instinct is still a hypothesis. Dashboards exist to tell you when you are wrong, and I read them.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- EXPERIENCE -->
-<section class="wrap" id="experience">
-  <div class="reveal">
-    <div class="eyebrow">Experience</div>
-    <h2>Six years, four chapters.</h2>
-    <p class="lede">From founding my own label to driving Rs 6 Cr+ in accounts, always in rooms where strategy and execution had to coexist.</p>
-  </div>
-
-  <div class="timeline">
-
-    <div class="role reveal">
-      <div class="role-year"><strong>2024–25</strong>Mumbai</div>
-      <div class="role-head">
-        <h4>Tonic Worldwide</h4>
-        <div class="rt">Content and Strategy Lead · New Business Lead</div>
-        <div class="rl">Digital marketing agency · Mumbai and UAE</div>
-      </div>
-      <div class="role-body">
-        <ul>
-          <li>Owned <strong>Rs 6 Cr+ in accounts</strong> across Nykaa, Dabur, Colgate, and 7+ marquee brands.</li>
-          <li>Shipped <strong>7 to 10 brand strategies per month</strong>, orchestrating 18+ cross-functional teams.</li>
-          <li>Launched a new vertical in India and UAE: <strong>30% revenue growth, 50% client-base growth</strong>.</li>
-          <li>Two national awards for Dabur Herb'l x Star Wars (Silver E4M, Bronze ET Digiplus).</li>
-          <li>Integrated AI content tools (Midjourney, Google AI Studio) into the creative pipeline, reducing the ideation-to-brief cycle by approximately 40%.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="role reveal">
-      <div class="role-year"><strong>2022–24</strong>Bengaluru</div>
-      <div class="role-head">
-        <h4>Peepul Tree Ventures <span style="font-size:0.75em;color:var(--muted);font-style:italic;font-weight:400;">(Live History India)</span></h4>
-        <div class="rt">Founder's Office · Strategy and Community</div>
-        <div class="rl">Cultural platform · Bengaluru</div>
-      </div>
-      <div class="role-body">
-        <ul>
-          <li>Enabled the <strong>$5M seed fundraise</strong> alongside founders on launch and early growth.</li>
-          <li>Drove <strong>20K+ monthly visitors in 3 months</strong> via MVP launch and content-led GTM.</li>
-          <li><strong>2x artisan product sales</strong> across Shopify, Etsy, and Amazon.</li>
-          <li>Built a <strong>500+ creator community</strong> on WhatsApp and Facebook from scratch.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="role reveal">
-      <div class="role-year"><strong>2021</strong>Bengaluru</div>
-      <div class="role-head">
-        <h4>Galleri5 <span style="font-size:0.75em;color:var(--muted);font-style:italic;font-weight:400;">(now Collective Artists Network)</span></h4>
-        <div class="rt">Senior Marketing Specialist</div>
-        <div class="rl">Creator-tech platform · Bengaluru</div>
-      </div>
-      <div class="role-body">
-        <ul>
-          <li><strong>50,000+ activations</strong> for Myntra EORS, winning a <strong>Global Gold Award</strong>.</li>
-          <li>Led <strong>100+ campaigns</strong> for 20+ lifestyle brands including H&amp;M, Myntra, and Cultfit.</li>
-          <li>Boosted platform adoption <strong>30%</strong> and cut ops time 20% through workflow automation.</li>
-          <li>Managed and mentored a 6-member team across curation and front-end UX.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="role reveal">
-      <div class="role-year"><strong>2019–20</strong>Mumbai</div>
-      <div class="role-head">
-        <h4>ROOS India</h4>
-        <div class="rt">Founder</div>
-        <div class="rl">Upcycled fashion label · Pan-India D2C</div>
-      </div>
-      <div class="role-body">
-        <ul>
-          <li>Built the label to <strong>Rs 5L+ revenue</strong> through pan-India D2C from a standing start.</li>
-          <li>Sold <strong>500+ upcycled garments</strong>, enabling 1,000+ women to repurpose their wardrobes.</li>
-          <li>Showcased at Khar Gymkhana and The Lil Flea, earning organic Etsy onboarding at <strong>zero CAC</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CAPABILITIES -->
-<section class="wrap" id="capabilities">
-  <div class="reveal">
-    <div class="eyebrow">Capabilities</div>
-    <h2>The toolkit.</h2>
-    <p class="lede">Strategy and execution on one side. AI, data, and product tooling on the other.</p>
-  </div>
-
-  <div class="caps">
-    <div class="cap-card reveal">
-      <h4>Brand Strategy and Positioning</h4>
-      <div class="cap-list">
-        <span>Brand Strategy</span>
-        <span>Creative Direction</span>
-        <span>GTM and Positioning</span>
-        <span>Campaign Development</span>
-        <span>Content and Storytelling</span>
-        <span>Consumer Insight</span>
-        <span>Category Analysis</span>
-        <span>Luxury and D2C Branding</span>
-        <span>Stakeholder Management</span>
-        <span>Agency Management</span>
-      </div>
-    </div>
-
-    <div class="cap-card reveal">
-      <h4>Product Marketing and Growth</h4>
-      <div class="cap-list">
-        <span>Product Marketing</span>
-        <span>D2C Operations</span>
-        <span>MVP Launch</span>
-        <span>User Segmentation</span>
-        <span>Community Building</span>
-        <span>E-commerce Ops</span>
-        <span>Influencer Strategy</span>
-        <span>Cross-functional Delivery</span>
-        <span>0 to 1 Builds</span>
-        <span>Funnel Optimisation</span>
-      </div>
-    </div>
-
-    <div class="cap-card reveal">
-      <h4>AI and Data Analytics</h4>
-      <div class="cap-list">
-        <span>Google AI Studio</span>
-        <span>Claude Code</span>
-        <span>Whisper Flow</span>
-        <span>Stitch</span>
-        <span>KNIME</span>
-        <span>Tableau</span>
-        <span>Power BI</span>
-        <span>n8n</span>
-        <span>Data Visualisation</span>
-        <span>Cohort Analysis</span>
-        <span>Performance Reporting</span>
-        <span>Prompt Engineering</span>
-      </div>
-    </div>
-
-    <div class="cap-card reveal">
-      <h4>Creative and Design Tools</h4>
-      <div class="cap-list">
-        <span>Figma</span>
-        <span>Framer</span>
-        <span>Adobe Suite</span>
-        <span>Canva</span>
-        <span>Midjourney</span>
-        <span>Shopify</span>
-        <span>Amazon Seller Central</span>
-        <span>Meta Ads Manager</span>
-        <span>Notion</span>
-        <span>Asana</span>
-      </div>
-    </div>
-
-    <div class="cap-card full-width reveal">
-      <h4>Sectors</h4>
-      <div class="cap-list">
-        <span>Beauty and Personal Care</span>
-        <span>Fashion and Lifestyle</span>
-        <span>Luxury</span>
-        <span>D2C and E-commerce</span>
-        <span>Consumer Tech</span>
-        <span>AI and Creator Tools</span>
-        <span>Sustainability and Circular Economy</span>
-        <span>Cultural Platforms</span>
-        <span>B2B and SaaS</span>
-        <span>Food and Beverage</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- EDUCATION -->
-<section class="wrap section-tight" id="education">
-  <div class="reveal">
-    <div class="eyebrow">Education</div>
-    <h2>Where I learned the rest.</h2>
-  </div>
-
-  <div class="timeline">
-
-    <div class="role reveal">
-      <div class="role-year"><strong>2025–26</strong>Gurugram</div>
-      <div class="role-head">
-        <h4>Masters' Union</h4>
-        <div class="rt">PGP · Technology and Business Management</div>
-        <div class="rl">Cohort of 320 · AI, Product and Strategy track</div>
-      </div>
-      <div class="role-body">
-        <ul>
-          <li>Core Member, <strong>Third Block Club</strong>: 3 of 320 students selected for the founding cohort.</li>
-          <li><strong>Rs 50K Venture Grant</strong> winner (1 of 10 from 120 teams), building RuSticks, now in 20+ outlets pan-India.</li>
-          <li>Co-Founder, For the Fours · Social Media Lead, Vinyasa Earth NGO.</li>
-          <li>Curriculum covers AI tooling, data analytics, product management, and B2B go-to-market.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="role reveal">
-      <div class="role-year"><strong>2017–19</strong>Mumbai · Milan</div>
-      <div class="role-head">
-        <h4>Pearl Academy</h4>
-        <div class="rt">PG · Luxury Brand Management · University of Nottingham</div>
-        <div class="rl">Exchange · Domus Academy, Milan</div>
-      </div>
-      <div class="role-body">
-        <ul>
-          <li>CGPA 3 / 4. Selected for the <strong>Milan exchange</strong> at one of Europe's most prestigious design schools.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="role reveal">
-      <div class="role-year"><strong>2014–17</strong>Kolkata</div>
-      <div class="role-head">
-        <h4>JD Birla Institute</h4>
-        <div class="rt">BBA · Marketing (Honours) · Jadavpur University</div>
-        <div class="rl">CGPA 9.63 / 10</div>
-      </div>
-      <div class="role-body">
-        <ul>
-          <li>Top academic performance · Marketing honours specialisation.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- RECOGNITION -->
+<!-- ABOUT TEASER -->
 <section class="wrap section-tight">
-  <div class="reveal">
-    <div class="eyebrow">Recognition</div>
-    <h2>Awards and honours.</h2>
-  </div>
-
-  <div class="awards-grid">
-    <div class="award gold reveal">
-      <div class="badge">★</div>
-      <div>
-        <h5>Global Gold · Galleri5 x Myntra EORS</h5>
-        <p>For 50,000+ activations led during the End of Reason Sale.</p>
-      </div>
+  <div class="about-teaser reveal">
+    <div class="at-left">
+      <div class="eyebrow">About</div>
+      <h2 style="max-width:22ch;">Brand strategist who learned the work by doing it.</h2>
+      <p class="lede" style="margin-top:0.75rem;">Six years across a founder's office, agencies, and a label of my own. 3 national awards. AI-fluent. Based in India.</p>
     </div>
-    <div class="award silver reveal">
-      <div class="badge">★</div>
-      <div>
-        <h5>Silver · Exchange4Media Awards</h5>
-        <p>Dabur Herb'l x Star Wars campaign · National recognition · 2024.</p>
+    <div class="at-right">
+      <div class="at-chips">
+        <span>Global Gold Award</span>
+        <span>$5M Fundraise</span>
+        <span>Rs 6 Cr+ Accounts</span>
+        <span>0→1 Founder</span>
+        <span>AI Tooling</span>
+        <span>Masters' Union</span>
       </div>
-    </div>
-    <div class="award bronze reveal">
-      <div class="badge">★</div>
-      <div>
-        <h5>Bronze · ET Digiplus Awards</h5>
-        <p>Dabur Herb'l x Star Wars campaign · National recognition · 2024.</p>
-      </div>
-    </div>
-    <div class="award reveal">
-      <div class="badge">Rs</div>
-      <div>
-        <h5>Rs 50K Venture Grant · Masters' Union</h5>
-        <p>RuSticks · One of 10 teams from 120 selected for seed capital.</p>
-      </div>
-    </div>
-    <div class="award reveal">
-      <div class="badge">◇</div>
-      <div>
-        <h5>Founder · ROOS India</h5>
-        <p>Rs 5L+ revenue, 500+ garments sold pan-India, onboarded to Etsy at zero CAC.</p>
-      </div>
-    </div>
-    <div class="award reveal">
-      <div class="badge">✱</div>
-      <div>
-        <h5>Exchange Scholar · Domus Academy, Milan</h5>
-        <p>Selected for the Milan exchange during Pearl Academy's Luxury Brand Management programme.</p>
-      </div>
+      <a href="about/" class="at-cta">Full background: experience, capabilities, education <span style="margin-left:0.3rem;">→</span></a>
     </div>
   </div>
 </section>
